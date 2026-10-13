@@ -1,0 +1,21 @@
+theme and font descv
+Primary theme: futuristic AI + playful game world
+Main colors: violet/purple family
+#3B0764 — deep violet
+#7C3AED — primary violet
+#8B5CF6 — medium violet
+#A78BFA — light violet
+soft lavender/white backgrounds
+Background: light lavender/purple gradient, not dark
+Main heading font: GoogleFonts.pressStart2p() — gaming/pixel style
+Supporting text: GoogleFonts.poppins() — clean and friendly
+Buttons: rounded, gradient violet, glowing shadow, subtle hover/press animation
+Cards/containers: white/translucent surfaces with soft violet borders and shadows
+AI feel: subtle glow, particles, circuits, nodes, futuristic details
+Robot: NEX/NEXI remains the main character; avoid unnecessary extra robots
+Motion: smooth, subtle animations rather than excessive movement
+Overall feel: professional + futuristic + kid-friendly + game-like
+Responsive: should work properly on your Android phone and larger screens
+No: dark purple-heavy screens, boring school/education styling, excessive text, random colors, or inconsistent fonts.
+
+

@@ -1,0 +1,35 @@
+name: nexlearn
+description: A gamified AI learning platform for children.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_fonts: ^8.2.1
+  shared_preferences: ^2.5.5
+  flutter_tts: ^4.2.5
+  flame: ^1.38.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/subjects/
+    - assets/images/robots/
+    - assets/curriculum/
+ 
+   

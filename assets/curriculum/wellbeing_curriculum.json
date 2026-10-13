@@ -1,0 +1,2846 @@
+{
+  "subject": "Wellbeing",
+  "curriculum_version": "1.1",
+  "curriculum_type": "Custom Cambridge-Style",
+  "note": "This is an original curriculum inspired by the strand structure and progression described in the user-provided Cambridge Primary Wellbeing overview. It is not official Cambridge curriculum content.",
+  "age_range": "Approximately 5-11",
+  "strands": [
+    "Understanding Myself",
+    "My Relationships",
+    "Navigating My World"
+  ],
+  "classes": [
+    {
+      "class": 1,
+      "level": "Beginner",
+      "stage": "Stage 1",
+      "strands": [
+        {
+          "name": "Understanding Myself",
+          "topics": [
+            {
+              "id": "WB1-001",
+              "name": "Feelings Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to meet my feelings.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Meet My Feelings"
+            },
+            {
+              "id": "WB1-002",
+              "name": "Feeling Finder",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my feelings have names.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Feelings Have Names"
+            },
+            {
+              "id": "WB1-003",
+              "name": "Emotion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to happy, sad, angry and calm.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Happy, Sad, Angry and Calm"
+            },
+            {
+              "id": "WB1-004",
+              "name": "Mood Switch",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my feelings can change.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Feelings Can Change"
+            },
+            {
+              "id": "WB1-005",
+              "name": "Happy Hunt",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to what makes me feel good?.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "What Makes Me Feel Good?"
+            },
+            {
+              "id": "WB1-006",
+              "name": "Body Care Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my body needs care.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Body Needs Care"
+            },
+            {
+              "id": "WB1-007",
+              "name": "Healthy Food Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy food, healthy me.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Food, Healthy Me"
+            },
+            {
+              "id": "WB1-008",
+              "name": "Sleep Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to sleep helps me grow.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Sleep Helps Me Grow"
+            },
+            {
+              "id": "WB1-009",
+              "name": "Active Adventure",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to move, play and be active.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Move, Play and Be Active"
+            },
+            {
+              "id": "WB1-010",
+              "name": "Calm Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my calm-down toolbox.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Calm-Down Toolbox"
+            },
+            {
+              "id": "WB1-011",
+              "name": "Strength Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my strengths and things i can learn.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Strengths and Things I Can Learn"
+            },
+            {
+              "id": "WB1-012",
+              "name": "Unique Me",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to i am special in my own way.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "I Am Special in My Own Way"
+            },
+            {
+              "id": "WB1-013",
+              "name": "Help Hero",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to when i need help.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "When I Need Help"
+            },
+            {
+              "id": "WB1-014",
+              "name": "Body Signals",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my feelings and my body.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Feelings and My Body"
+            },
+            {
+              "id": "WB1-015",
+              "name": "Wellbeing Planner",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my first wellbeing plan.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My First Wellbeing Plan"
+            },
+            {
+              "id": "WB1-016",
+              "name": "Effort Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to being proud of my effort.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Being Proud of My Effort"
+            },
+            {
+              "id": "WB1-017",
+              "name": "Mind Care Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to taking care of my mind.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Taking Care of My Mind"
+            },
+            {
+              "id": "WB1-018",
+              "name": "Body Care Mission",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to taking care of my body.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Taking Care of My Body"
+            }
+          ]
+        },
+        {
+          "name": "My Relationships",
+          "topics": [
+            {
+              "id": "WB1-019",
+              "name": "People Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to meet my people.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Meet My People"
+            },
+            {
+              "id": "WB1-020",
+              "name": "Friendship Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to being a good friend.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Being a Good Friend"
+            },
+            {
+              "id": "WB1-021",
+              "name": "Turn-Taking Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to sharing and taking turns.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Sharing and Taking Turns"
+            },
+            {
+              "id": "WB1-022",
+              "name": "Everyone Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to including everyone.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Including Everyone"
+            },
+            {
+              "id": "WB1-023",
+              "name": "Kindness Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to kind words, kind actions.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Kind Words, Kind Actions"
+            },
+            {
+              "id": "WB1-024",
+              "name": "Listening Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to listening when someone speaks.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Listening When Someone Speaks"
+            },
+            {
+              "id": "WB1-025",
+              "name": "Feelings Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to how others might feel.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "How Others Might Feel"
+            },
+            {
+              "id": "WB1-026",
+              "name": "Home Helper",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to helping at home.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Helping at Home"
+            },
+            {
+              "id": "WB1-027",
+              "name": "Team Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to working together.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Working Together"
+            },
+            {
+              "id": "WB1-028",
+              "name": "Friendship Repair",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to saying sorry and forgiving.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Saying Sorry and Forgiving"
+            },
+            {
+              "id": "WB1-029",
+              "name": "Difference Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to celebrating our differences.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Celebrating Our Differences"
+            },
+            {
+              "id": "WB1-030",
+              "name": "Community Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my safe and caring community.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Safe and Caring Community"
+            },
+            {
+              "id": "WB1-031",
+              "name": "Helping Hero",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to helping someone who needs me.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Helping Someone Who Needs Me"
+            },
+            {
+              "id": "WB1-032",
+              "name": "Space Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to respecting personal space.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Respecting Personal Space"
+            },
+            {
+              "id": "WB1-033",
+              "name": "Friendship Solver",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to friendship problem solver.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Friendship Problem Solver"
+            },
+            {
+              "id": "WB1-034",
+              "name": "Fair Team Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to working together fairly.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Working Together Fairly"
+            }
+          ]
+        },
+        {
+          "name": "Navigating My World",
+          "topics": [
+            {
+              "id": "WB1-035",
+              "name": "Safety Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to safe places and unsafe places.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Safe Places and Unsafe Places"
+            },
+            {
+              "id": "WB1-036",
+              "name": "Trust Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to trusted adults.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Trusted Adults"
+            },
+            {
+              "id": "WB1-037",
+              "name": "My Body Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my body belongs to me.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Body Belongs to Me"
+            },
+            {
+              "id": "WB1-038",
+              "name": "Safety Signals",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to safe and unsafe touch.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Safe and Unsafe Touch"
+            },
+            {
+              "id": "WB1-039",
+              "name": "Choice Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to ask before you act.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Ask Before You Act"
+            },
+            {
+              "id": "WB1-040",
+              "name": "Safety Escape",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to what to do when i feel unsafe.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "What To Do When I Feel Unsafe"
+            },
+            {
+              "id": "WB1-041",
+              "name": "Road Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to road and travel safety.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Road and Travel Safety"
+            },
+            {
+              "id": "WB1-042",
+              "name": "Play Safe Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to safe choices at play.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Safe Choices at Play"
+            },
+            {
+              "id": "WB1-043",
+              "name": "Tech Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to using technology safely.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Using Technology Safely"
+            },
+            {
+              "id": "WB1-044",
+              "name": "Kindness Mission",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to kindness in my community.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Kindness in My Community"
+            },
+            {
+              "id": "WB1-045",
+              "name": "Change Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to when plans change.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "When Plans Change"
+            },
+            {
+              "id": "WB1-046",
+              "name": "Safe Helper",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to helping others safely.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Helping Others Safely"
+            },
+            {
+              "id": "WB1-047",
+              "name": "Wellbeing Adventure",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my first wellbeing adventure.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My First Wellbeing Adventure"
+            },
+            {
+              "id": "WB1-048",
+              "name": "Emergency Hero",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to emergency help.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Emergency Help"
+            },
+            {
+              "id": "WB1-049",
+              "name": "Safe Choice Challenge",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to the safe choice challenge.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "The Safe Choice Challenge"
+            },
+            {
+              "id": "WB1-050",
+              "name": "Space Saver",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to looking after shared spaces.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Looking After Shared Spaces"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 2,
+      "level": "Beginner",
+      "stage": "Stage 2",
+      "strands": [
+        {
+          "name": "Understanding Myself",
+          "topics": [
+            {
+              "id": "WB2-051",
+              "name": "Feeling Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to name that feeling.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Name That Feeling"
+            },
+            {
+              "id": "WB2-052",
+              "name": "Emotion Mystery",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to why do i feel this way?.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Why Do I Feel This Way?"
+            },
+            {
+              "id": "WB2-053",
+              "name": "Mood Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to feelings can change.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Feelings Can Change"
+            },
+            {
+              "id": "WB2-054",
+              "name": "Body Clue Hunt",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my body gives me clues.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Body Gives Me Clues"
+            },
+            {
+              "id": "WB2-055",
+              "name": "Calm Down Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to calm my body down.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Calm My Body Down"
+            },
+            {
+              "id": "WB2-056",
+              "name": "Healthy Habits Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy habits challenge.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Habits Challenge"
+            },
+            {
+              "id": "WB2-057",
+              "name": "Food Power Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to food that helps me.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Food That Helps Me"
+            },
+            {
+              "id": "WB2-058",
+              "name": "Rest Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to sleep and rest.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Sleep and Rest"
+            },
+            {
+              "id": "WB2-059",
+              "name": "Move Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to move my body.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Move My Body"
+            },
+            {
+              "id": "WB2-060",
+              "name": "Positive Voice",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my positive self-talk.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Positive Self-Talk"
+            },
+            {
+              "id": "WB2-061",
+              "name": "Strength Hunter",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to things i am good at.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Things I Am Good At"
+            },
+            {
+              "id": "WB2-062",
+              "name": "Growth Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to things i want to improve.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Things I Want to Improve"
+            },
+            {
+              "id": "WB2-063",
+              "name": "Help Seeker",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to asking for help.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Asking for Help"
+            },
+            {
+              "id": "WB2-064",
+              "name": "Choice Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my feelings and my choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Feelings and My Choices"
+            },
+            {
+              "id": "WB2-065",
+              "name": "Bounce Back Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to handling disappointment.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Handling Disappointment"
+            },
+            {
+              "id": "WB2-066",
+              "name": "Rest Mission",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making time to rest.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making Time to Rest"
+            },
+            {
+              "id": "WB2-067",
+              "name": "Strength Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my personal strengths.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Personal Strengths"
+            },
+            {
+              "id": "WB2-068",
+              "name": "Wellbeing Toolbox",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my wellbeing toolbox.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Wellbeing Toolbox"
+            }
+          ]
+        },
+        {
+          "name": "My Relationships",
+          "topics": [
+            {
+              "id": "WB2-069",
+              "name": "Friendship Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to what makes a good friend?.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "What Makes a Good Friend?"
+            },
+            {
+              "id": "WB2-070",
+              "name": "Listening Challenge",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to the listening challenge.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "The Listening Challenge"
+            },
+            {
+              "id": "WB2-071",
+              "name": "Fair Turn Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to taking turns fairly.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Taking Turns Fairly"
+            },
+            {
+              "id": "WB2-072",
+              "name": "Welcome Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to including someone new.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Including Someone New"
+            },
+            {
+              "id": "WB2-073",
+              "name": "Perspective Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to understanding another person.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Understanding Another Person"
+            },
+            {
+              "id": "WB2-074",
+              "name": "Kindness Mission",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to kindness is a choice.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Kindness Is a Choice"
+            },
+            {
+              "id": "WB2-075",
+              "name": "Peace Maker",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to solving small arguments.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Solving Small Arguments"
+            },
+            {
+              "id": "WB2-076",
+              "name": "Feedback Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to giving helpful feedback.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Giving Helpful Feedback"
+            },
+            {
+              "id": "WB2-077",
+              "name": "Team Mission",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to working as a team.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Working as a Team"
+            },
+            {
+              "id": "WB2-078",
+              "name": "Boundary Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to respecting personal space.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Respecting Personal Space"
+            },
+            {
+              "id": "WB2-079",
+              "name": "Family World",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to different families, different lives.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Different Families, Different Lives"
+            },
+            {
+              "id": "WB2-080",
+              "name": "Community Hero",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to being a good community member.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Being a Good Community Member"
+            },
+            {
+              "id": "WB2-081",
+              "name": "Inclusion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to when someone feels left out.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "When Someone Feels Left Out"
+            },
+            {
+              "id": "WB2-082",
+              "name": "Team Duties",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to sharing responsibilities.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Sharing Responsibilities"
+            },
+            {
+              "id": "WB2-083",
+              "name": "Promise Keeper",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to keeping promises.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Keeping Promises"
+            },
+            {
+              "id": "WB2-084",
+              "name": "Friendship Repair",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to friendship repair mission.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Friendship Repair Mission"
+            }
+          ]
+        },
+        {
+          "name": "Navigating My World",
+          "topics": [
+            {
+              "id": "WB2-085",
+              "name": "Safety Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to safe or unsafe choice?.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Safe or Unsafe Choice?"
+            },
+            {
+              "id": "WB2-086",
+              "name": "Trust Network",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to trusted people around me.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Trusted People Around Me"
+            },
+            {
+              "id": "WB2-087",
+              "name": "Boundary Defender",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my personal boundaries.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Personal Boundaries"
+            },
+            {
+              "id": "WB2-088",
+              "name": "Safe No Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to saying no safely.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Saying No Safely"
+            },
+            {
+              "id": "WB2-089",
+              "name": "Help Fast",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to getting help quickly.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Getting Help Quickly"
+            },
+            {
+              "id": "WB2-090",
+              "name": "School Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to safety at school.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Safety at School"
+            },
+            {
+              "id": "WB2-091",
+              "name": "Road Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to safety on the road.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Safety on the Road"
+            },
+            {
+              "id": "WB2-092",
+              "name": "Online Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to safe online choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Safe Online Choices"
+            },
+            {
+              "id": "WB2-093",
+              "name": "Change Challenge",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to what if something changes?.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "What If Something Changes?"
+            },
+            {
+              "id": "WB2-094",
+              "name": "Safe Helper",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to helping without taking risks.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Helping Without Taking Risks"
+            },
+            {
+              "id": "WB2-095",
+              "name": "Shared Space Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to looking after shared spaces.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Looking After Shared Spaces"
+            },
+            {
+              "id": "WB2-096",
+              "name": "Wellbeing Mission",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my wellbeing mission.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Wellbeing Mission"
+            },
+            {
+              "id": "WB2-097",
+              "name": "Wellbeing Challenge",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to the class 2 wellbeing challenge.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "The Class 2 Wellbeing Challenge"
+            },
+            {
+              "id": "WB2-098",
+              "name": "Risk Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to recognising risk.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Recognising Risk"
+            },
+            {
+              "id": "WB2-099",
+              "name": "Crowd Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to staying safe in crowded places.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Staying Safe in Crowded Places"
+            },
+            {
+              "id": "WB2-100",
+              "name": "Safety Planner",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making a safe plan.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making a Safe Plan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 3,
+      "level": "Beginner to Intermediate",
+      "stage": "Stage 3",
+      "strands": [
+        {
+          "name": "Understanding Myself",
+          "topics": [
+            {
+              "id": "WB3-101",
+              "name": "Emotion Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to emotions detective.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Emotions Detective"
+            },
+            {
+              "id": "WB3-102",
+              "name": "Trigger Hunt",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to what triggers my feelings?.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "What Triggers My Feelings?"
+            },
+            {
+              "id": "WB3-103",
+              "name": "Body Signal Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to feelings and body signals.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Feelings and Body Signals"
+            },
+            {
+              "id": "WB3-104",
+              "name": "Emotion Control Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing strong feelings.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Strong Feelings"
+            },
+            {
+              "id": "WB3-105",
+              "name": "Calm Strategy Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to calm-down strategies.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Calm-Down Strategies"
+            },
+            {
+              "id": "WB3-106",
+              "name": "Healthy Routine Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy routines.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Routines"
+            },
+            {
+              "id": "WB3-107",
+              "name": "Energy Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to food, energy and activity.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Food, Energy and Activity"
+            },
+            {
+              "id": "WB3-108",
+              "name": "Sleep Mystery",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to why sleep matters.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Why Sleep Matters"
+            },
+            {
+              "id": "WB3-109",
+              "name": "Positive Mind Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to positive self-talk.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Positive Self-Talk"
+            },
+            {
+              "id": "WB3-110",
+              "name": "Strengths & Goals",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my strengths and goals.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Strengths and Goals"
+            },
+            {
+              "id": "WB3-111",
+              "name": "Mistake Master",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to learning from mistakes.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Learning From Mistakes"
+            },
+            {
+              "id": "WB3-112",
+              "name": "Support Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to when i need support.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "When I Need Support"
+            },
+            {
+              "id": "WB3-113",
+              "name": "Wellbeing Planner",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my personal wellbeing plan.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Personal Wellbeing Plan"
+            },
+            {
+              "id": "WB3-114",
+              "name": "Emotion Mix-Up",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to understanding mixed feelings.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Understanding Mixed Feelings"
+            },
+            {
+              "id": "WB3-115",
+              "name": "Response Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to changing my response.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Changing My Response"
+            },
+            {
+              "id": "WB3-116",
+              "name": "Habit Builder",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to building healthy habits.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Building Healthy Habits"
+            },
+            {
+              "id": "WB3-117",
+              "name": "Worry Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to coping with worry.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Coping With Worry"
+            }
+          ]
+        },
+        {
+          "name": "My Relationships",
+          "topics": [
+            {
+              "id": "WB3-118",
+              "name": "Friendship Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to friendship detectives.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Friendship Detectives"
+            },
+            {
+              "id": "WB3-119",
+              "name": "Listen & Respond",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to listen, understand, respond.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Listen, Understand, Respond"
+            },
+            {
+              "id": "WB3-120",
+              "name": "Inclusion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to including everyone.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Including Everyone"
+            },
+            {
+              "id": "WB3-121",
+              "name": "Empathy Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to how exclusion feels.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "How Exclusion Feels"
+            },
+            {
+              "id": "WB3-122",
+              "name": "Friendship Solver",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to solving friendship problems.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Solving Friendship Problems"
+            },
+            {
+              "id": "WB3-123",
+              "name": "Conflict Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to conflict resolution basics.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Conflict Resolution Basics"
+            },
+            {
+              "id": "WB3-124",
+              "name": "Joke or Hurt",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to jokes, teasing and feelings.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Jokes, Teasing and Feelings"
+            },
+            {
+              "id": "WB3-125",
+              "name": "Kind Feedback Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to kind and helpful feedback.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Kind and Helpful Feedback"
+            },
+            {
+              "id": "WB3-126",
+              "name": "Team Challenge",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to teamwork challenge.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Teamwork Challenge"
+            },
+            {
+              "id": "WB3-127",
+              "name": "Difference Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to respecting differences.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Respecting Differences"
+            },
+            {
+              "id": "WB3-128",
+              "name": "Trust Builder",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to building trust.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Building Trust"
+            },
+            {
+              "id": "WB3-129",
+              "name": "Friend Support Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to supporting someone who is struggling.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Supporting Someone Who Is Struggling"
+            },
+            {
+              "id": "WB3-130",
+              "name": "Perspective Hunt",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to seeing another point of view.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Seeing Another Point of View"
+            },
+            {
+              "id": "WB3-131",
+              "name": "Fairness Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to fairness in a group.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Fairness in a Group"
+            },
+            {
+              "id": "WB3-132",
+              "name": "Relationship Repair",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to apologising and repairing relationships.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Apologising and Repairing Relationships"
+            },
+            {
+              "id": "WB3-133",
+              "name": "Communication Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to positive communication.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Positive Communication"
+            }
+          ]
+        },
+        {
+          "name": "Navigating My World",
+          "topics": [
+            {
+              "id": "WB3-134",
+              "name": "Safety Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to recognising safe and unsafe situations.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Recognising Safe and Unsafe Situations"
+            },
+            {
+              "id": "WB3-135",
+              "name": "Boundary Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing personal boundaries.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Personal Boundaries"
+            },
+            {
+              "id": "WB3-136",
+              "name": "Support Network",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to trusted adults and support networks.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Trusted Adults and Support Networks"
+            },
+            {
+              "id": "WB3-137",
+              "name": "Speak Up Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to speaking up safely.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Speaking Up Safely"
+            },
+            {
+              "id": "WB3-138",
+              "name": "Safe Decision Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making safe decisions.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making Safe Decisions"
+            },
+            {
+              "id": "WB3-139",
+              "name": "Change Challenge",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to handling unexpected change.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Handling Unexpected Change"
+            },
+            {
+              "id": "WB3-140",
+              "name": "Public Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to safety in public places.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Safety in Public Places"
+            },
+            {
+              "id": "WB3-141",
+              "name": "Digital Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to digital safety basics.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Digital Safety Basics"
+            },
+            {
+              "id": "WB3-142",
+              "name": "Online Hero",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to being responsible online.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Being Responsible Online"
+            },
+            {
+              "id": "WB3-143",
+              "name": "Community Helper",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to helping my community.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Helping My Community"
+            },
+            {
+              "id": "WB3-144",
+              "name": "Diversity Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to diversity around me.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Diversity Around Me"
+            },
+            {
+              "id": "WB3-145",
+              "name": "Action Planner",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my wellbeing action plan.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Wellbeing Action Plan"
+            },
+            {
+              "id": "WB3-146",
+              "name": "Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to the stage 3 wellbeing quest.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "The Stage 3 Wellbeing Quest"
+            },
+            {
+              "id": "WB3-147",
+              "name": "Consequence Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to understanding consequences.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Understanding Consequences"
+            },
+            {
+              "id": "WB3-148",
+              "name": "Help Finder",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to getting help from the right person.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Getting Help From the Right Person"
+            },
+            {
+              "id": "WB3-149",
+              "name": "Safe Change Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to being safe during change.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Being Safe During Change"
+            },
+            {
+              "id": "WB3-150",
+              "name": "Community Solver",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to community problem solver.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Community Problem Solver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 4,
+      "level": "Intermediate",
+      "stage": "Stage 4",
+      "strands": [
+        {
+          "name": "Understanding Myself",
+          "topics": [
+            {
+              "id": "WB4-151",
+              "name": "Emotion Explorer",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to understanding emotional change.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Understanding Emotional Change"
+            },
+            {
+              "id": "WB4-152",
+              "name": "Trigger Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to planned and unplanned triggers.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Planned and Unplanned Triggers"
+            },
+            {
+              "id": "WB4-153",
+              "name": "Emotion Action Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to the emotion-action connection.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "The Emotion-Action Connection"
+            },
+            {
+              "id": "WB4-154",
+              "name": "Stress Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing stress.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Stress"
+            },
+            {
+              "id": "WB4-155",
+              "name": "Coping Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy ways to cope.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Ways to Cope"
+            },
+            {
+              "id": "WB4-156",
+              "name": "Resilience Builder",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to building resilience.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Building Resilience"
+            },
+            {
+              "id": "WB4-157",
+              "name": "Wellbeing Balance",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to physical and emotional wellbeing.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Physical and Emotional Wellbeing"
+            },
+            {
+              "id": "WB4-158",
+              "name": "Routine Builder",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to balanced daily routines.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Balanced Daily Routines"
+            },
+            {
+              "id": "WB4-159",
+              "name": "Energy Balance Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to sleep, exercise and energy.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Sleep, Exercise and Energy"
+            },
+            {
+              "id": "WB4-160",
+              "name": "Pressure Challenge",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy choices under pressure.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Choices Under Pressure"
+            },
+            {
+              "id": "WB4-161",
+              "name": "Values Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my strengths and values.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Strengths and Values"
+            },
+            {
+              "id": "WB4-162",
+              "name": "Goal Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to setting personal goals.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Setting Personal Goals"
+            },
+            {
+              "id": "WB4-163",
+              "name": "Wellbeing Checkpoint",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to reflecting on my wellbeing.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Reflecting on My Wellbeing"
+            },
+            {
+              "id": "WB4-164",
+              "name": "Stress Signal Hunt",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to recognising stress signals.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Recognising Stress Signals"
+            },
+            {
+              "id": "WB4-165",
+              "name": "Response Reboot",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to changing an unhelpful response.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Changing an Unhelpful Response"
+            },
+            {
+              "id": "WB4-166",
+              "name": "Self-Care Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to independence and self-care.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Independence and Self-Care"
+            },
+            {
+              "id": "WB4-167",
+              "name": "Wellbeing Strategy",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my personal wellbeing strategy.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Personal Wellbeing Strategy"
+            }
+          ]
+        },
+        {
+          "name": "My Relationships",
+          "topics": [
+            {
+              "id": "WB4-168",
+              "name": "Healthy Relationship Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to what makes relationships healthy?.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "What Makes Relationships Healthy?"
+            },
+            {
+              "id": "WB4-169",
+              "name": "Trust Builder",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to communication that builds trust.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Communication That Builds Trust"
+            },
+            {
+              "id": "WB4-170",
+              "name": "Listening Master",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to active listening.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Active Listening"
+            },
+            {
+              "id": "WB4-171",
+              "name": "Perspective Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to seeing another point of view.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Seeing Another Point of View"
+            },
+            {
+              "id": "WB4-172",
+              "name": "Conflict Solver",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to conflict resolution.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Conflict Resolution"
+            },
+            {
+              "id": "WB4-173",
+              "name": "Joke or Bullying",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to the difference between a joke and bullying.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "The Difference Between a Joke and Bullying"
+            },
+            {
+              "id": "WB4-174",
+              "name": "Bullying Response Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to responding to bullying.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Responding to Bullying"
+            },
+            {
+              "id": "WB4-175",
+              "name": "Belonging Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to inclusion and belonging.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Inclusion and Belonging"
+            },
+            {
+              "id": "WB4-176",
+              "name": "Boundary Defender",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to respecting boundaries.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Respecting Boundaries"
+            },
+            {
+              "id": "WB4-177",
+              "name": "Feedback Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to giving and receiving feedback.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Giving and Receiving Feedback"
+            },
+            {
+              "id": "WB4-178",
+              "name": "Team Roles Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to team roles and cooperation.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Team Roles and Cooperation"
+            },
+            {
+              "id": "WB4-179",
+              "name": "Friend Support Mission",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to supporting friends responsibly.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Supporting Friends Responsibly"
+            },
+            {
+              "id": "WB4-180",
+              "name": "Relationship Builder",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to building positive relationships.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Building Positive Relationships"
+            },
+            {
+              "id": "WB4-181",
+              "name": "Pressure Proof",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to peer pressure and choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Peer Pressure and Choices"
+            },
+            {
+              "id": "WB4-182",
+              "name": "Respectful Debate",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing disagreement respectfully.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Disagreement Respectfully"
+            },
+            {
+              "id": "WB4-183",
+              "name": "Repair Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to repairing a relationship.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Repairing a Relationship"
+            },
+            {
+              "id": "WB4-184",
+              "name": "Community Mission",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to community and social responsibility.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Community and Social Responsibility"
+            }
+          ]
+        },
+        {
+          "name": "Navigating My World",
+          "topics": [
+            {
+              "id": "WB4-185",
+              "name": "Risk Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to understanding risk.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Understanding Risk"
+            },
+            {
+              "id": "WB4-186",
+              "name": "Safe Decision Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making safe decisions.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making Safe Decisions"
+            },
+            {
+              "id": "WB4-187",
+              "name": "Change Challenge",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to changing situations.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Changing Situations"
+            },
+            {
+              "id": "WB4-188",
+              "name": "Influence Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to pressure and influence.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Pressure and Influence"
+            },
+            {
+              "id": "WB4-189",
+              "name": "Speak Up Mission",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to speaking up with confidence.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Speaking Up With Confidence"
+            },
+            {
+              "id": "WB4-190",
+              "name": "Help Finder",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to getting the right help.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Getting the Right Help"
+            },
+            {
+              "id": "WB4-191",
+              "name": "Safety Shield",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to personal and digital safety.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Personal and Digital Safety"
+            },
+            {
+              "id": "WB4-192",
+              "name": "Online Choice Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to online communication choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Online Communication Choices"
+            },
+            {
+              "id": "WB4-193",
+              "name": "Digital Conflict Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing online conflict.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Online Conflict"
+            },
+            {
+              "id": "WB4-194",
+              "name": "Community Hero",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to community responsibility.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Community Responsibility"
+            },
+            {
+              "id": "WB4-195",
+              "name": "Belonging Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to diversity and belonging.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Diversity and Belonging"
+            },
+            {
+              "id": "WB4-196",
+              "name": "Safe Helper",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to helping others safely.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Helping Others Safely"
+            },
+            {
+              "id": "WB4-197",
+              "name": "Safety Planner",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my safety and wellbeing plan.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Safety and Wellbeing Plan"
+            },
+            {
+              "id": "WB4-198",
+              "name": "Digital Detective",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to recognising unsafe online behaviour.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Recognising Unsafe Online Behaviour"
+            },
+            {
+              "id": "WB4-199",
+              "name": "Unexpected Event Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to handling unexpected events.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Handling Unexpected Events"
+            },
+            {
+              "id": "WB4-200",
+              "name": "Making Backup Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making a backup plan.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making a Backup Plan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 5,
+      "level": "Intermediate",
+      "stage": "Stage 5",
+      "strands": [
+        {
+          "name": "Understanding Myself",
+          "topics": [
+            {
+              "id": "WB5-201",
+              "name": "Emotion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to why emotions change.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Why Emotions Change"
+            },
+            {
+              "id": "WB5-202",
+              "name": "Emotion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to recognising emotional triggers.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Recognising Emotional Triggers"
+            },
+            {
+              "id": "WB5-203",
+              "name": "Calm Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to stress signals.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Stress Signals"
+            },
+            {
+              "id": "WB5-204",
+              "name": "Calm Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing stress effectively.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Stress Effectively"
+            },
+            {
+              "id": "WB5-205",
+              "name": "Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy coping strategies.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Coping Strategies"
+            },
+            {
+              "id": "WB5-206",
+              "name": "Emotion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to building emotional resilience.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Building Emotional Resilience"
+            },
+            {
+              "id": "WB5-207",
+              "name": "Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to physical health and mental wellbeing.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Physical Health and Mental Wellbeing"
+            },
+            {
+              "id": "WB5-208",
+              "name": "Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy routines that last.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Routines That Last"
+            },
+            {
+              "id": "WB5-209",
+              "name": "Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to sleep, activity and performance.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Sleep, Activity and Performance"
+            },
+            {
+              "id": "WB5-210",
+              "name": "Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making healthy choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making Healthy Choices"
+            },
+            {
+              "id": "WB5-211",
+              "name": "Self Awareness Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to self-awareness and personal values.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Self-Awareness and Personal Values"
+            },
+            {
+              "id": "WB5-212",
+              "name": "Setting Meaningful Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to setting meaningful goals.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Setting Meaningful Goals"
+            },
+            {
+              "id": "WB5-213",
+              "name": "Reflecting Adapting Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to reflecting and adapting.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Reflecting and Adapting"
+            },
+            {
+              "id": "WB5-214",
+              "name": "Managing Pressure Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing pressure.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Pressure"
+            },
+            {
+              "id": "WB5-215",
+              "name": "Recognising Need Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to recognising when i need support.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Recognising When I Need Support"
+            },
+            {
+              "id": "WB5-216",
+              "name": "Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy independence.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Independence"
+            },
+            {
+              "id": "WB5-217",
+              "name": "Personal Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my personal wellbeing strategy.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Personal Wellbeing Strategy"
+            }
+          ]
+        },
+        {
+          "name": "My Relationships",
+          "topics": [
+            {
+              "id": "WB5-218",
+              "name": "Friendship Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy and unhealthy relationships.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy and Unhealthy Relationships"
+            },
+            {
+              "id": "WB5-219",
+              "name": "Communication Styles Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to communication styles.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Communication Styles"
+            },
+            {
+              "id": "WB5-220",
+              "name": "Listening Empathy Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to listening with empathy.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Listening With Empathy"
+            },
+            {
+              "id": "WB5-221",
+              "name": "Understanding Different Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to understanding different perspectives.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Understanding Different Perspectives"
+            },
+            {
+              "id": "WB5-222",
+              "name": "Resolving Conflict Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to resolving conflict fairly.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Resolving Conflict Fairly"
+            },
+            {
+              "id": "WB5-223",
+              "name": "Bullying Teasing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to bullying, teasing and power.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Bullying, Teasing and Power"
+            },
+            {
+              "id": "WB5-224",
+              "name": "Responding Peer Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to responding to peer pressure.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Responding to Peer Pressure"
+            },
+            {
+              "id": "WB5-225",
+              "name": "Inclusion Exclusion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to inclusion and exclusion.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Inclusion and Exclusion"
+            },
+            {
+              "id": "WB5-226",
+              "name": "Respecting Boundaries Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to respecting boundaries.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Respecting Boundaries"
+            },
+            {
+              "id": "WB5-227",
+              "name": "Trust Responsibility Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to trust and responsibility.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Trust and Responsibility"
+            },
+            {
+              "id": "WB5-228",
+              "name": "Cooperation Leadership Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to cooperation and leadership.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Cooperation and Leadership"
+            },
+            {
+              "id": "WB5-229",
+              "name": "Supporting Others Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to supporting others without taking over.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Supporting Others Without Taking Over"
+            },
+            {
+              "id": "WB5-230",
+              "name": "Friendship Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to positive relationship choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Positive Relationship Choices"
+            },
+            {
+              "id": "WB5-231",
+              "name": "Handling Group Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to handling group pressure.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Handling Group Pressure"
+            },
+            {
+              "id": "WB5-232",
+              "name": "Friendship Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to digital relationships.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Digital Relationships"
+            },
+            {
+              "id": "WB5-233",
+              "name": "Respectful Disagreement Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to respectful disagreement.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Respectful Disagreement"
+            },
+            {
+              "id": "WB5-234",
+              "name": "Community Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to building a supportive community.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Building a Supportive Community"
+            }
+          ]
+        },
+        {
+          "name": "Navigating My World",
+          "topics": [
+            {
+              "id": "WB5-235",
+              "name": "Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to risk and consequences.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Risk and Consequences"
+            },
+            {
+              "id": "WB5-236",
+              "name": "Making Decisions Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making decisions under pressure.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making Decisions Under Pressure"
+            },
+            {
+              "id": "WB5-237",
+              "name": "Change Uncertainty Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to change and uncertainty.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Change and Uncertainty"
+            },
+            {
+              "id": "WB5-238",
+              "name": "Influence Others Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to influence from others.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Influence From Others"
+            },
+            {
+              "id": "WB5-239",
+              "name": "Assertive Communication Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to assertive communication.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Assertive Communication"
+            },
+            {
+              "id": "WB5-240",
+              "name": "Finding Trusted Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to finding trusted support.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Finding Trusted Support"
+            },
+            {
+              "id": "WB5-241",
+              "name": "Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to digital identity and safety.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Digital Identity and Safety"
+            },
+            {
+              "id": "WB5-242",
+              "name": "Digital Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to responsible online communication.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Responsible Online Communication"
+            },
+            {
+              "id": "WB5-243",
+              "name": "Digital Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to online pressure and conflict.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Online Pressure and Conflict"
+            },
+            {
+              "id": "WB5-244",
+              "name": "Community Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to community and social responsibility.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Community and Social Responsibility"
+            },
+            {
+              "id": "WB5-245",
+              "name": "Benefits Diversity Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to benefits of diversity.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Benefits of Diversity"
+            },
+            {
+              "id": "WB5-246",
+              "name": "Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to safe ways to help others.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Safe Ways to Help Others"
+            },
+            {
+              "id": "WB5-247",
+              "name": "Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my personal safety strategy.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Personal Safety Strategy"
+            },
+            {
+              "id": "WB5-248",
+              "name": "Privacy Personal Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to privacy and personal information.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Privacy and Personal Information"
+            },
+            {
+              "id": "WB5-249",
+              "name": "Recognising Misinformation Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to recognising misinformation.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Recognising Misinformation"
+            },
+            {
+              "id": "WB5-250",
+              "name": "Digital Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making responsible online choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making Responsible Online Choices"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 6,
+      "level": "Advanced",
+      "stage": "Stage 6",
+      "strands": [
+        {
+          "name": "Understanding Myself",
+          "topics": [
+            {
+              "id": "WB6-251",
+              "name": "Emotion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to understanding complex emotions.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Understanding Complex Emotions"
+            },
+            {
+              "id": "WB6-252",
+              "name": "Emotion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to how context changes feelings.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "How Context Changes Feelings"
+            },
+            {
+              "id": "WB6-253",
+              "name": "Calm Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to long-term stress and recovery.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Long-Term Stress and Recovery"
+            },
+            {
+              "id": "WB6-254",
+              "name": "Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to choosing healthy coping strategies.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Choosing Healthy Coping Strategies"
+            },
+            {
+              "id": "WB6-255",
+              "name": "Building Resilience Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to building resilience through challenges.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Building Resilience Through Challenges"
+            },
+            {
+              "id": "WB6-256",
+              "name": "Emotion Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to connecting physical and emotional health.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Connecting Physical and Emotional Health"
+            },
+            {
+              "id": "WB6-257",
+              "name": "Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy habits and independence.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Habits and Independence"
+            },
+            {
+              "id": "WB6-258",
+              "name": "Managing Time Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing time, rest and activity.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Time, Rest and Activity"
+            },
+            {
+              "id": "WB6-259",
+              "name": "Making Informed Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making informed wellbeing choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making Informed Wellbeing Choices"
+            },
+            {
+              "id": "WB6-260",
+              "name": "Recognising Support Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to recognising when support is needed.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Recognising When Support Is Needed"
+            },
+            {
+              "id": "WB6-261",
+              "name": "Personal Values Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to personal values and identity.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Personal Values and Identity"
+            },
+            {
+              "id": "WB6-262",
+              "name": "Goal Setting Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to goal setting and self-reflection.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Goal Setting and Self-Reflection"
+            },
+            {
+              "id": "WB6-263",
+              "name": "Design Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to design my wellbeing strategy.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Design My Wellbeing Strategy"
+            },
+            {
+              "id": "WB6-264",
+              "name": "Adapting Major Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to adapting to major change.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Adapting to Major Change"
+            },
+            {
+              "id": "WB6-265",
+              "name": "Managing Multiple Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing multiple pressures.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Multiple Pressures"
+            },
+            {
+              "id": "WB6-266",
+              "name": "Self Care Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to self-care and responsibility.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Self-Care and Responsibility"
+            },
+            {
+              "id": "WB6-267",
+              "name": "Planning Long Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to planning for long-term wellbeing.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Planning for Long-Term Wellbeing"
+            }
+          ]
+        },
+        {
+          "name": "My Relationships",
+          "topics": [
+            {
+              "id": "WB6-268",
+              "name": "Friendship Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to healthy relationships in real life.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Healthy Relationships in Real Life"
+            },
+            {
+              "id": "WB6-269",
+              "name": "Communication Difficult Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to communication in difficult situations.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Communication in Difficult Situations"
+            },
+            {
+              "id": "WB6-270",
+              "name": "Empathy Perspective Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to empathy and perspective taking.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Empathy and Perspective Taking"
+            },
+            {
+              "id": "WB6-271",
+              "name": "Managing Disagreement Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing disagreement.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Disagreement"
+            },
+            {
+              "id": "WB6-272",
+              "name": "Conflict Resolution Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to conflict resolution strategies.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Conflict Resolution Strategies"
+            },
+            {
+              "id": "WB6-273",
+              "name": "Bullying Power Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to bullying and power dynamics.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Bullying and Power Dynamics"
+            },
+            {
+              "id": "WB6-274",
+              "name": "Peer Pressure Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to peer pressure and independent choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Peer Pressure and Independent Choices"
+            },
+            {
+              "id": "WB6-275",
+              "name": "Inclusion Diversity Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to inclusion, diversity and belonging.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Inclusion, Diversity and Belonging"
+            },
+            {
+              "id": "WB6-276",
+              "name": "Boundaries Mutual Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to boundaries and mutual respect.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Boundaries and Mutual Respect"
+            },
+            {
+              "id": "WB6-277",
+              "name": "Trust Privacy Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to trust, privacy and responsibility.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Trust, Privacy and Responsibility"
+            },
+            {
+              "id": "WB6-278",
+              "name": "Team Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to teamwork and shared leadership.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Teamwork and Shared Leadership"
+            },
+            {
+              "id": "WB6-279",
+              "name": "Supporting Others Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to supporting others responsibly.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Supporting Others Responsibly"
+            },
+            {
+              "id": "WB6-280",
+              "name": "Building Strong Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to building strong communities.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Building Strong Communities"
+            },
+            {
+              "id": "WB6-281",
+              "name": "Handling Social Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to handling social conflict.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Handling Social Conflict"
+            },
+            {
+              "id": "WB6-282",
+              "name": "Friendship Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to respectful online relationships.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Respectful Online Relationships"
+            },
+            {
+              "id": "WB6-283",
+              "name": "Making Fair Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to making fair group decisions.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Making Fair Group Decisions"
+            },
+            {
+              "id": "WB6-284",
+              "name": "Positive Social Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to positive social action.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Positive Social Action"
+            }
+          ]
+        },
+        {
+          "name": "Navigating My World",
+          "topics": [
+            {
+              "id": "WB6-285",
+              "name": "Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to assessing risk and consequences.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Assessing Risk and Consequences"
+            },
+            {
+              "id": "WB6-286",
+              "name": "Decision Making Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to decision-making in complex situations.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Decision-Making in Complex Situations"
+            },
+            {
+              "id": "WB6-287",
+              "name": "Adapting Change Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to adapting to change.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Adapting to Change"
+            },
+            {
+              "id": "WB6-288",
+              "name": "Managing Social Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing social pressure.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Social Pressure"
+            },
+            {
+              "id": "WB6-289",
+              "name": "Assertive Respectful Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to assertive and respectful communication.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Assertive and Respectful Communication"
+            },
+            {
+              "id": "WB6-290",
+              "name": "Finding Appropriate Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to finding appropriate support.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Finding Appropriate Support"
+            },
+            {
+              "id": "WB6-291",
+              "name": "Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to digital safety and privacy.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Digital Safety and Privacy"
+            },
+            {
+              "id": "WB6-292",
+              "name": "Friendship Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing online relationships.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Online Relationships"
+            },
+            {
+              "id": "WB6-293",
+              "name": "Digital Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to misinformation and online choices.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Misinformation and Online Choices"
+            },
+            {
+              "id": "WB6-294",
+              "name": "Digital Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to personal digital responsibility.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Personal Digital Responsibility"
+            },
+            {
+              "id": "WB6-295",
+              "name": "Diversity Changing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to diversity in a changing world.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Diversity in a Changing World"
+            },
+            {
+              "id": "WB6-296",
+              "name": "Community Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to social responsibility and community action.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Social Responsibility and Community Action"
+            },
+            {
+              "id": "WB6-297",
+              "name": "Future Wellbeing Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to my future wellbeing plan.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "My Future Wellbeing Plan"
+            },
+            {
+              "id": "WB6-298",
+              "name": "Digital Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to managing digital footprints.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Managing Digital Footprints"
+            },
+            {
+              "id": "WB6-299",
+              "name": "Digital Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to recognising manipulation online.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Recognising Manipulation Online"
+            },
+            {
+              "id": "WB6-300",
+              "name": "Safety Quest",
+              "learning_objectives": [
+                "Understand key wellbeing ideas related to responding to unsafe situations.",
+                "Practise age-appropriate strategies for healthy, safe and respectful choices."
+              ],
+              "educational_title": "Responding to Unsafe Situations"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

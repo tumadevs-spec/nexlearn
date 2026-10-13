@@ -1,0 +1,2934 @@
+{
+  "subject": "Computer Science",
+  "curriculum_version": "1.1",
+  "classes": [
+    {
+      "class": 1,
+      "subject": "Computer Science",
+      "level": "Beginner",
+      "description": "A creative, age-appropriate Computer Science curriculum for Class 1, designed around simple digital concepts, instructions, patterns, problem solving, basic coding ideas, and digital safety.",
+      "strands": [
+        {
+          "id": "CS1-01",
+          "name": "Computer World",
+          "topics": [
+            {
+              "id": "CS1-01-01",
+              "name": "Friend Quest",
+              "learning_objectives": [
+                "Understand what a computer is.",
+                "Identify simple tasks computers can help people do."
+              ],
+              "educational_title": "Meet Your Computer Friend"
+            },
+            {
+              "id": "CS1-01-02",
+              "name": "Hiding Lab",
+              "learning_objectives": [
+                "Identify common computer parts.",
+                "Match computer parts with their basic uses."
+              ],
+              "educational_title": "What Is Hiding Inside a Computer?"
+            },
+            {
+              "id": "CS1-01-03",
+              "name": "Learning Builder",
+              "learning_objectives": [
+                "Choose basic computer parts for a task.",
+                "Understand that different parts have different jobs."
+              ],
+              "educational_title": "Build Your Perfect Computer"
+            },
+            {
+              "id": "CS1-01-04",
+              "name": "Screen Builder",
+              "learning_objectives": [
+                "Recognize a computer screen.",
+                "Identify simple information shown on a screen."
+              ],
+              "educational_title": "The Screen That Shows Everything"
+            },
+            {
+              "id": "CS1-01-05",
+              "name": "Keyboard Challenge",
+              "learning_objectives": [
+                "Identify letters, numbers, space, and common keyboard keys.",
+                "Use simple keyboard keys."
+              ],
+              "educational_title": "Keyboard Treasure Hunt"
+            },
+            {
+              "id": "CS1-01-06",
+              "name": "Mouse Builder",
+              "learning_objectives": [
+                "Understand how a mouse is used.",
+                "Practice moving, pointing, and clicking."
+              ],
+              "educational_title": "Mouse Mission"
+            },
+            {
+              "id": "CS1-01-07",
+              "name": "Speak Lab",
+              "learning_objectives": [
+                "Recognize speakers as output devices.",
+                "Understand that computers can produce sounds."
+              ],
+              "educational_title": "Make the Computer Speak"
+            },
+            {
+              "id": "CS1-01-08",
+              "name": "Camera Lab",
+              "learning_objectives": [
+                "Recognize a camera as a digital device.",
+                "Understand that a camera can capture pictures or video."
+              ],
+              "educational_title": "The Computer's Camera Eye"
+            },
+            {
+              "id": "CS1-01-09",
+              "name": "Touch Quest",
+              "learning_objectives": [
+                "Recognize a touchscreen.",
+                "Practice simple actions such as tapping and dragging."
+              ],
+              "educational_title": "Touchscreen Magic"
+            },
+            {
+              "id": "CS1-01-10",
+              "name": "Learning Quest",
+              "learning_objectives": [
+                "Identify common computer activities.",
+                "Match computers with simple everyday tasks."
+              ],
+              "educational_title": "What Can a Computer Do?"
+            },
+            {
+              "id": "CS1-01-11",
+              "name": "Match Match",
+              "learning_objectives": [
+                "Match digital tools with their simple purposes.",
+                "Choose the right device for a basic task."
+              ],
+              "educational_title": "Match the Right Tool"
+            }
+          ]
+        },
+        {
+          "id": "CS1-02",
+          "name": "Input, Output and Digital Information",
+          "topics": [
+            {
+              "id": "CS1-02-01",
+              "name": "Machine Talker",
+              "learning_objectives": [
+                "Understand that people interact with computers.",
+                "Identify different ways people give information to computers."
+              ],
+              "educational_title": "Talk to the Machine"
+            },
+            {
+              "id": "CS1-02-02",
+              "name": "Input Runner",
+              "learning_objectives": [
+                "Understand the simple idea of input.",
+                "Identify common input devices."
+              ],
+              "educational_title": "Send It an Input"
+            },
+            {
+              "id": "CS1-02-03",
+              "name": "Output Catcher",
+              "learning_objectives": [
+                "Understand the simple idea of output.",
+                "Identify screens and speakers as output devices."
+              ],
+              "educational_title": "Catch the Computer's Output"
+            },
+            {
+              "id": "CS1-02-04",
+              "name": "Info Builder",
+              "learning_objectives": [
+                "Recognize different kinds of information.",
+                "Find missing information in simple activities."
+              ],
+              "educational_title": "The Mystery of Missing Information"
+            },
+            {
+              "id": "CS1-02-05",
+              "name": "Numbers Battle",
+              "learning_objectives": [
+                "Understand that computers can work with numbers.",
+                "Use numbers in simple digital activities."
+              ],
+              "educational_title": "Numbers Inside the Computer"
+            },
+            {
+              "id": "CS1-02-06",
+              "name": "Words Builder",
+              "learning_objectives": [
+                "Understand that computers can display words.",
+                "Enter simple letters and words."
+              ],
+              "educational_title": "Words Inside the Computer"
+            },
+            {
+              "id": "CS1-02-07",
+              "name": "Picture Run",
+              "learning_objectives": [
+                "Understand that computers can display and store pictures.",
+                "Identify and interact with simple digital pictures."
+              ],
+              "educational_title": "Pictures on the Screen"
+            },
+            {
+              "id": "CS1-02-08",
+              "name": "Computers Adventure",
+              "learning_objectives": [
+                "Understand that computers can play and record sounds.",
+                "Identify simple digital sound activities."
+              ],
+              "educational_title": "How Computers Handle Sounds"
+            }
+          ]
+        },
+        {
+          "id": "CS1-03",
+          "name": "Instructions, Sequences and Patterns",
+          "topics": [
+            {
+              "id": "CS1-03-01",
+              "name": "Robot Challenge",
+              "learning_objectives": [
+                "Give simple instructions.",
+                "Follow basic commands such as move, stop, turn, and jump."
+              ],
+              "educational_title": "Robot, Listen to Me!"
+            },
+            {
+              "id": "CS1-03-02",
+              "name": "Robot Commander",
+              "learning_objectives": [
+                "Use simple directions such as left, right, forward, and backward.",
+                "Guide a character using directions."
+              ],
+              "educational_title": "Give the Robot Directions"
+            },
+            {
+              "id": "CS1-03-03",
+              "name": "One Challenge",
+              "learning_objectives": [
+                "Understand that tasks can be completed step by step.",
+                "Arrange simple actions in order."
+              ],
+              "educational_title": "One Step at a Time"
+            },
+            {
+              "id": "CS1-03-04",
+              "name": "Hero Runner",
+              "learning_objectives": [
+                "Plan a simple route.",
+                "Guide a character to a destination."
+              ],
+              "educational_title": "Guide the Lost Character"
+            },
+            {
+              "id": "CS1-03-05",
+              "name": "Order Arena",
+              "learning_objectives": [
+                "Understand that the order of steps matters.",
+                "Arrange actions in the correct order."
+              ],
+              "educational_title": "The Secret Order of Steps"
+            },
+            {
+              "id": "CS1-03-06",
+              "name": "Put Battle",
+              "learning_objectives": [
+                "Rebuild a mixed-up sequence.",
+                "Use ordered steps to complete a simple task."
+              ],
+              "educational_title": "Put the Steps Back Together"
+            },
+            {
+              "id": "CS1-03-07",
+              "name": "Robot Builder",
+              "learning_objectives": [
+                "Find an incorrect direction.",
+                "Choose the correct direction."
+              ],
+              "educational_title": "The Robot Took the Wrong Turn!"
+            },
+            {
+              "id": "CS1-03-08",
+              "name": "Fix Fixer",
+              "learning_objectives": [
+                "Find one wrong instruction.",
+                "Replace it with the correct instruction."
+              ],
+              "educational_title": "Fix the Broken Instructions"
+            },
+            {
+              "id": "CS1-03-09",
+              "name": "Pattern Hunt",
+              "learning_objectives": [
+                "Recognize simple patterns.",
+                "Identify the missing part of a pattern."
+              ],
+              "educational_title": "Find the Hidden Pattern"
+            },
+            {
+              "id": "CS1-03-10",
+              "name": "Pattern Builder",
+              "learning_objectives": [
+                "Create simple patterns using colors, shapes, numbers, or objects.",
+                "Explain a simple pattern rule."
+              ],
+              "educational_title": "Build a Pattern Machine"
+            },
+            {
+              "id": "CS1-03-11",
+              "name": "Repeating Mission",
+              "learning_objectives": [
+                "Recognize repeated actions or patterns.",
+                "Identify simple repetition in activities and games."
+              ],
+              "educational_title": "The Magic of Repeating"
+            }
+          ]
+        },
+        {
+          "id": "CS1-04",
+          "name": "Computational Thinking and Simple Coding",
+          "topics": [
+            {
+              "id": "CS1-04-01",
+              "name": "Problem Breaker",
+              "learning_objectives": [
+                "Break a familiar task into smaller steps.",
+                "Complete a larger task by solving smaller parts."
+              ],
+              "educational_title": "Break a Big Problem into Little Pieces"
+            },
+            {
+              "id": "CS1-04-02",
+              "name": "Think Builder",
+              "learning_objectives": [
+                "Understand that computers need clear instructions.",
+                "Give precise simple commands."
+              ],
+              "educational_title": "Think Like a Computer"
+            },
+            {
+              "id": "CS1-04-03",
+              "name": "Move Challenge",
+              "learning_objectives": [
+                "Choose a suitable action for a simple problem.",
+                "Compare simple possible actions."
+              ],
+              "educational_title": "Choose the Right Move"
+            },
+            {
+              "id": "CS1-04-04",
+              "name": "Rule Hunt",
+              "learning_objectives": [
+                "Discover simple rules used to organize objects.",
+                "Apply a simple rule to another activity."
+              ],
+              "educational_title": "Find the Hidden Rule"
+            },
+            {
+              "id": "CS1-04-05",
+              "name": "Sort Sorter",
+              "learning_objectives": [
+                "Group objects by color, shape, size, or type.",
+                "Identify the rule used for sorting."
+              ],
+              "educational_title": "Sort the Computer's Things"
+            },
+            {
+              "id": "CS1-04-06",
+              "name": "Command Commander",
+              "learning_objectives": [
+                "Use simple block-style commands.",
+                "Combine a few commands to make a character perform an action."
+              ],
+              "educational_title": "Command the Friendly Robot"
+            },
+            {
+              "id": "CS1-04-07",
+              "name": "Step Hunt",
+              "learning_objectives": [
+                "Find one mistake in a short command sequence.",
+                "Correct the simple mistake."
+              ],
+              "educational_title": "Find the Wrong Step"
+            },
+            {
+              "id": "CS1-04-08",
+              "name": "Game Builder",
+              "learning_objectives": [
+                "Understand simple game rules.",
+                "Arrange simple actions to create part of a basic game."
+              ],
+              "educational_title": "Create Your First Mini Game"
+            },
+            {
+              "id": "CS1-04-09",
+              "name": "Hero Lab",
+              "learning_objectives": [
+                "Control a character using simple commands.",
+                "Create a short movement sequence."
+              ],
+              "educational_title": "Make a Character Move"
+            },
+            {
+              "id": "CS1-04-10",
+              "name": "Code Hunt",
+              "learning_objectives": [
+                "Plan commands to collect objects.",
+                "Arrange commands in the correct order."
+              ],
+              "educational_title": "Collect the Stars with Code"
+            },
+            {
+              "id": "CS1-04-11",
+              "name": "Maze Escape",
+              "learning_objectives": [
+                "Plan a simple path through a maze.",
+                "Use directions to reach a target."
+              ],
+              "educational_title": "Escape the Computer Maze"
+            },
+            {
+              "id": "CS1-04-12",
+              "name": "Unlock Escape",
+              "learning_objectives": [
+                "Follow simple access instructions.",
+                "Understand that some digital information should be kept private."
+              ],
+              "educational_title": "Unlock the Secret Door"
+            }
+          ]
+        },
+        {
+          "id": "CS1-05",
+          "name": "Digital Safety and Responsible Technology",
+          "topics": [
+            {
+              "id": "CS1-05-01",
+              "name": "Digital Defense",
+              "learning_objectives": [
+                "Recognize simple ways to keep devices safe.",
+                "Choose safe digital behaviors."
+              ],
+              "educational_title": "Protect the Digital Castle"
+            },
+            {
+              "id": "CS1-05-02",
+              "name": "Digital Arena",
+              "learning_objectives": [
+                "Understand that passwords protect accounts.",
+                "Understand that passwords should be kept private."
+              ],
+              "educational_title": "My Secret Digital Key"
+            },
+            {
+              "id": "CS1-05-03",
+              "name": "Trust Arena",
+              "learning_objectives": [
+                "Identify trusted adults who can provide help.",
+                "Know when to ask a trusted adult for help."
+              ],
+              "educational_title": "Who Can You Trust Online?"
+            },
+            {
+              "id": "CS1-05-04",
+              "name": "Digital Escape",
+              "learning_objectives": [
+                "Recognize unfamiliar messages or content.",
+                "Choose a safe response to unfamiliar digital content."
+              ],
+              "educational_title": "Real or Fake? Digital Detective"
+            },
+            {
+              "id": "CS1-05-05",
+              "name": "Choice Lab",
+              "learning_objectives": [
+                "Identify safe and unsafe digital behaviors.",
+                "Choose the safer action in simple situations."
+              ],
+              "educational_title": "Safe or Unsafe? Make the Choice"
+            },
+            {
+              "id": "CS1-05-06",
+              "name": "Hero Battle",
+              "learning_objectives": [
+                "Understand basic responsibilities when using devices.",
+                "Practice caring for shared digital devices."
+              ],
+              "educational_title": "Be a Responsible Tech Hero"
+            },
+            {
+              "id": "CS1-05-07",
+              "name": "Digital Challenge",
+              "learning_objectives": [
+                "Apply basic computer and problem-solving skills.",
+                "Use safe and responsible digital behavior."
+              ],
+              "educational_title": "Your First Digital Adventure"
+            },
+            {
+              "id": "CS1-05-08",
+              "name": "Challenge Mission",
+              "learning_objectives": [
+                "Review basic Class 1 Computer Science concepts.",
+                "Use multiple learned skills to complete a simple challenge."
+              ],
+              "educational_title": "The Great Computer Challenge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 2,
+      "subject": "Computer Science",
+      "level": "Beginner",
+      "description": "A creative, age-appropriate Computer Science curriculum for Class 2. Students build on basic computer knowledge by learning about digital tools, files and information, algorithms, simple block-based programming, problem solving, and responsible digital behavior.",
+      "strands": [
+        {
+          "id": "CS2-01",
+          "name": "Digital Tools and Devices",
+          "topics": [
+            {
+              "id": "CS2-01-01",
+              "name": "Digital Challenge",
+              "learning_objectives": [
+                "Identify different digital devices.",
+                "Choose an appropriate device for a simple task."
+              ],
+              "educational_title": "Choose Your Digital Tool"
+            },
+            {
+              "id": "CS2-01-02",
+              "name": "Desktop Quest",
+              "learning_objectives": [
+                "Compare common digital devices.",
+                "Identify simple similarities and differences between devices."
+              ],
+              "educational_title": "Desktop, Tablet or Phone?"
+            },
+            {
+              "id": "CS2-01-03",
+              "name": "Inside Challenge",
+              "learning_objectives": [
+                "Identify common input and output devices.",
+                "Explain the basic job of different computer parts."
+              ],
+              "educational_title": "Inside the Computer Team"
+            },
+            {
+              "id": "CS2-01-04",
+              "name": "Keyboard Puzzle",
+              "learning_objectives": [
+                "Use letters, numbers, space, enter, and backspace keys.",
+                "Use keyboard shortcuts for simple actions where appropriate."
+              ],
+              "educational_title": "Keyboard Secret Codes"
+            },
+            {
+              "id": "CS2-01-05",
+              "name": "Mouse Adventure",
+              "learning_objectives": [
+                "Use clicking, double-clicking, dragging, and scrolling.",
+                "Use the mouse to complete simple digital tasks."
+              ],
+              "educational_title": "Mouse Master Challenge"
+            },
+            {
+              "id": "CS2-01-06",
+              "name": "Touch Run",
+              "learning_objectives": [
+                "Use common touchscreen actions.",
+                "Complete simple activities using touch gestures."
+              ],
+              "educational_title": "Touch, Tap and Drag"
+            },
+            {
+              "id": "CS2-01-07",
+              "name": "Device Escape",
+              "learning_objectives": [
+                "Identify devices from their features.",
+                "Match devices with their common uses."
+              ],
+              "educational_title": "The Device Detective"
+            },
+            {
+              "id": "CS2-01-08",
+              "name": "Digital Builder",
+              "learning_objectives": [
+                "Identify the tools needed for a digital task.",
+                "Organize digital tools according to their purpose."
+              ],
+              "educational_title": "Build Your Digital Workspace"
+            },
+            {
+              "id": "CS2-01-09",
+              "name": "Input Puzzle",
+              "learning_objectives": [
+                "Distinguish between input and output devices.",
+                "Sort devices according to how they interact with a computer."
+              ],
+              "educational_title": "Input or Output? The Great Sorting Game"
+            },
+            {
+              "id": "CS2-01-10",
+              "name": "Digital Adventure",
+              "learning_objectives": [
+                "Select suitable digital tools to solve simple problems.",
+                "Explain why a particular tool is useful for a task."
+              ],
+              "educational_title": "The Digital Tool Rescue"
+            }
+          ]
+        },
+        {
+          "id": "CS2-02",
+          "name": "Digital Information and Organization",
+          "topics": [
+            {
+              "id": "CS2-02-01",
+              "name": "Digital Builder",
+              "learning_objectives": [
+                "Understand that digital devices can store information.",
+                "Identify different types of digital information."
+              ],
+              "educational_title": "The Digital Treasure Box"
+            },
+            {
+              "id": "CS2-02-02",
+              "name": "File Hunt",
+              "learning_objectives": [
+                "Recognize that digital work can be saved as files.",
+                "Find a file using a simple name or location."
+              ],
+              "educational_title": "Find the Right File"
+            },
+            {
+              "id": "CS2-02-03",
+              "name": "File Lab",
+              "learning_objectives": [
+                "Understand the purpose of file names.",
+                "Create simple meaningful names for files."
+              ],
+              "educational_title": "File Name Detective"
+            },
+            {
+              "id": "CS2-02-04",
+              "name": "Folder Puzzle",
+              "learning_objectives": [
+                "Understand that folders help organize files.",
+                "Place related files into a suitable folder."
+              ],
+              "educational_title": "The Folder House"
+            },
+            {
+              "id": "CS2-02-05",
+              "name": "Picture Run",
+              "learning_objectives": [
+                "Recognize different types of digital information.",
+                "Sort digital information into simple categories."
+              ],
+              "educational_title": "Picture, Word or Sound?"
+            },
+            {
+              "id": "CS2-02-06",
+              "name": "Digital Lab",
+              "learning_objectives": [
+                "Identify missing information in a digital task.",
+                "Use clues to determine what information is needed."
+              ],
+              "educational_title": "The Missing Digital Message"
+            },
+            {
+              "id": "CS2-02-07",
+              "name": "Digital Builder",
+              "learning_objectives": [
+                "Combine pictures, words, and sounds to communicate an idea.",
+                "Arrange digital elements in a meaningful order."
+              ],
+              "educational_title": "Build a Digital Story"
+            },
+            {
+              "id": "CS2-02-08",
+              "name": "Info Mission",
+              "learning_objectives": [
+                "Group information according to simple properties.",
+                "Use categories to organize information."
+              ],
+              "educational_title": "The Information Sorting Machine"
+            },
+            {
+              "id": "CS2-02-09",
+              "name": "Save Rescue",
+              "learning_objectives": [
+                "Understand why digital work should be saved.",
+                "Practice saving simple digital work."
+              ],
+              "educational_title": "Save It Before It Disappears!"
+            },
+            {
+              "id": "CS2-02-10",
+              "name": "Digital Challenge",
+              "learning_objectives": [
+                "Organize files and information using simple categories.",
+                "Find requested information in an organized collection."
+              ],
+              "educational_title": "The Digital Organizer Challenge"
+            }
+          ]
+        },
+        {
+          "id": "CS2-03",
+          "name": "Algorithms, Logic and Problem Solving",
+          "topics": [
+            {
+              "id": "CS2-03-01",
+              "name": "Robot Puzzle",
+              "learning_objectives": [
+                "Identify the steps needed to complete a familiar routine.",
+                "Arrange the steps in the correct order."
+              ],
+              "educational_title": "The Robot's Morning Routine"
+            },
+            {
+              "id": "CS2-03-02",
+              "name": "Recipe Escape",
+              "learning_objectives": [
+                "Understand that instructions can be written as ordered steps.",
+                "Create a simple sequence for completing a task."
+              ],
+              "educational_title": "The Perfect Recipe"
+            },
+            {
+              "id": "CS2-03-03",
+              "name": "Robot Builder",
+              "learning_objectives": [
+                "Plan a route using simple directions.",
+                "Choose directions that help a character reach a target."
+              ],
+              "educational_title": "Which Way Should the Robot Go?"
+            },
+            {
+              "id": "CS2-03-04",
+              "name": "Maze Puzzle",
+              "learning_objectives": [
+                "Read a simple grid or map.",
+                "Use directions to navigate through a simple maze."
+              ],
+              "educational_title": "The Maze Map Mystery"
+            },
+            {
+              "id": "CS2-03-05",
+              "name": "Spot Hunt",
+              "learning_objectives": [
+                "Identify an incorrect instruction in a sequence.",
+                "Replace the incorrect instruction with a suitable one."
+              ],
+              "educational_title": "Spot the Wrong Instruction"
+            },
+            {
+              "id": "CS2-03-06",
+              "name": "If Run",
+              "learning_objectives": [
+                "Understand simple if-then relationships.",
+                "Choose an action based on a simple condition."
+              ],
+              "educational_title": "The If-Then Magic Door"
+            },
+            {
+              "id": "CS2-03-07",
+              "name": "Path Challenge",
+              "learning_objectives": [
+                "Make a simple decision based on available information.",
+                "Understand that different choices can lead to different results."
+              ],
+              "educational_title": "Choose Your Path"
+            },
+            {
+              "id": "CS2-03-08",
+              "name": "Mission Breaker",
+              "learning_objectives": [
+                "Break a larger problem into smaller tasks.",
+                "Solve smaller tasks to complete a larger challenge."
+              ],
+              "educational_title": "Break the Mission Apart"
+            },
+            {
+              "id": "CS2-03-09",
+              "name": "Pattern Arena",
+              "learning_objectives": [
+                "Recognize repeating and growing patterns.",
+                "Predict the next item in a simple pattern."
+              ],
+              "educational_title": "Pattern Hunter Returns"
+            },
+            {
+              "id": "CS2-03-10",
+              "name": "Logic Adventure",
+              "learning_objectives": [
+                "Use sequences, patterns, and simple decisions to solve problems.",
+                "Explain the basic steps used to reach a solution."
+              ],
+              "educational_title": "The Great Logic Adventure"
+            }
+          ]
+        },
+        {
+          "id": "CS2-04",
+          "name": "Creative Coding and Game Building",
+          "topics": [
+            {
+              "id": "CS2-04-01",
+              "name": "Code Quest",
+              "learning_objectives": [
+                "Recognize simple block-based programming commands.",
+                "Understand that blocks can represent instructions."
+              ],
+              "educational_title": "Meet the Coding Blocks"
+            },
+            {
+              "id": "CS2-04-02",
+              "name": "Hero Lab",
+              "learning_objectives": [
+                "Use movement commands to control a character.",
+                "Arrange commands to create a simple movement sequence."
+              ],
+              "educational_title": "Make the Character Walk"
+            },
+            {
+              "id": "CS2-04-03",
+              "name": "Jump Puzzle",
+              "learning_objectives": [
+                "Combine movement commands to solve a simple challenge.",
+                "Test commands and change them when necessary."
+              ],
+              "educational_title": "Jump Over the River"
+            },
+            {
+              "id": "CS2-04-04",
+              "name": "Code Mission",
+              "learning_objectives": [
+                "Create a sequence of commands to navigate a maze.",
+                "Identify and correct simple command mistakes."
+              ],
+              "educational_title": "The Coding Maze"
+            },
+            {
+              "id": "CS2-04-05",
+              "name": "Hero Lab",
+              "learning_objectives": [
+                "Create a sequence of movement commands.",
+                "Use repeated commands to create a simple animation."
+              ],
+              "educational_title": "Make the Character Dance"
+            },
+            {
+              "id": "CS2-04-06",
+              "name": "If Puzzle",
+              "learning_objectives": [
+                "Use simple if-then blocks.",
+                "Make a character respond to a simple condition."
+              ],
+              "educational_title": "The Magic If-Then Button"
+            },
+            {
+              "id": "CS2-04-07",
+              "name": "Golden Hunt",
+              "learning_objectives": [
+                "Create commands that guide a character toward targets.",
+                "Use simple decisions to complete a game challenge."
+              ],
+              "educational_title": "Collect the Golden Coins"
+            },
+            {
+              "id": "CS2-04-08",
+              "name": "Level Builder",
+              "learning_objectives": [
+                "Create a simple game environment.",
+                "Add a character, target, and basic rules to a level."
+              ],
+              "educational_title": "Build Your First Level"
+            },
+            {
+              "id": "CS2-04-09",
+              "name": "Code Mission",
+              "learning_objectives": [
+                "Test a simple program.",
+                "Find and correct a basic coding mistake."
+              ],
+              "educational_title": "The Coding Bug Hunt"
+            },
+            {
+              "id": "CS2-04-10",
+              "name": "Mini Builder",
+              "learning_objectives": [
+                "Combine sequences, movement, and simple conditions.",
+                "Create a small interactive game or story using block-style commands."
+              ],
+              "educational_title": "Create Your Mini Adventure"
+            }
+          ]
+        },
+        {
+          "id": "CS2-05",
+          "name": "Digital Safety and Smart Technology Use",
+          "topics": [
+            {
+              "id": "CS2-05-01",
+              "name": "Digital Lab",
+              "learning_objectives": [
+                "Identify information that should remain private.",
+                "Understand why private information should not be shared with strangers."
+              ],
+              "educational_title": "My Digital Secret"
+            },
+            {
+              "id": "CS2-05-02",
+              "name": "Password Lab",
+              "learning_objectives": [
+                "Understand the purpose of passwords.",
+                "Practice basic password safety habits."
+              ],
+              "educational_title": "Password Power-Up"
+            },
+            {
+              "id": "CS2-05-03",
+              "name": "Message Adventure",
+              "learning_objectives": [
+                "Recognize messages from unknown people.",
+                "Know to avoid responding and ask a trusted adult for help."
+              ],
+              "educational_title": "The Stranger Message"
+            },
+            {
+              "id": "CS2-05-04",
+              "name": "Click Challenge",
+              "learning_objectives": [
+                "Recognize that not every button or link should be opened.",
+                "Choose safe actions when encountering unfamiliar links."
+              ],
+              "educational_title": "Click or Don't Click?"
+            },
+            {
+              "id": "CS2-05-05",
+              "name": "Kindness Builder",
+              "learning_objectives": [
+                "Understand respectful behavior in digital spaces.",
+                "Choose kind and appropriate ways to communicate."
+              ],
+              "educational_title": "The Kindness Quest Online"
+            },
+            {
+              "id": "CS2-05-06",
+              "name": "Screen Builder",
+              "learning_objectives": [
+                "Understand the importance of balancing screen activities with other activities.",
+                "Recognize healthy and responsible device habits."
+              ],
+              "educational_title": "The Screen-Time Balance"
+            },
+            {
+              "id": "CS2-05-07",
+              "name": "Digital Defense",
+              "learning_objectives": [
+                "Identify simple ways to protect digital accounts and devices.",
+                "Practice safe device-use habits."
+              ],
+              "educational_title": "Protect the Digital Garden"
+            },
+            {
+              "id": "CS2-05-08",
+              "name": "Real Quest",
+              "learning_objectives": [
+                "Recognize that digital information may come from different sources.",
+                "Ask a trusted adult when information seems confusing or suspicious."
+              ],
+              "educational_title": "Real, Strange or Unknown?"
+            },
+            {
+              "id": "CS2-05-09",
+              "name": "Responsible Arena",
+              "learning_objectives": [
+                "Understand responsible behavior while playing digital games.",
+                "Practice following rules and treating others respectfully."
+              ],
+              "educational_title": "The Responsible Gamer"
+            },
+            {
+              "id": "CS2-05-10",
+              "name": "Digital Quest",
+              "learning_objectives": [
+                "Apply Class 2 digital skills to solve an interactive challenge.",
+                "Demonstrate safe, responsible, and creative technology use."
+              ],
+              "educational_title": "The Class 2 Digital Hero Challenge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 3,
+      "subject": "Computer Science",
+      "level": "Beginner to Intermediate",
+      "description": "A creative, age-appropriate Computer Science curriculum for Class 3. Students develop computational thinking, algorithm design, block-based programming, data skills, Internet awareness, and digital safety through practical and game-friendly challenges.",
+      "strands": [
+        {
+          "id": "CS3-01",
+          "name": "Computational Thinking Adventures",
+          "topics": [
+            {
+              "id": "CS3-01-01",
+              "name": "Problem Breaker",
+              "learning_objectives": [
+                "Identify smaller parts of a larger problem.",
+                "Break a familiar problem into manageable tasks."
+              ],
+              "educational_title": "Break the Giant Problem"
+            },
+            {
+              "id": "CS3-01-02",
+              "name": "Puzzle Escape",
+              "learning_objectives": [
+                "Recognize how smaller problems can be combined to solve a larger problem.",
+                "Organize subproblems into a useful order."
+              ],
+              "educational_title": "The Puzzle Piece Detective"
+            },
+            {
+              "id": "CS3-01-03",
+              "name": "Pattern Hunt",
+              "learning_objectives": [
+                "Identify repeated structures or behaviors.",
+                "Recognize patterns that can help solve a new problem."
+              ],
+              "educational_title": "Spot the Pattern!"
+            },
+            {
+              "id": "CS3-01-04",
+              "name": "Pattern Challenge",
+              "learning_objectives": [
+                "Compare two problems and identify a common pattern.",
+                "Apply a known pattern to a similar problem."
+              ],
+              "educational_title": "The Pattern Copy Machine"
+            },
+            {
+              "id": "CS3-01-05",
+              "name": "Keep Adventure",
+              "learning_objectives": [
+                "Identify information that is important for solving a problem.",
+                "Separate useful information from unnecessary details."
+              ],
+              "educational_title": "Keep the Important Clues"
+            },
+            {
+              "id": "CS3-01-06",
+              "name": "Disappearing Escape",
+              "learning_objectives": [
+                "Remove irrelevant details from a simple problem.",
+                "Focus on the information needed to solve a task."
+              ],
+              "educational_title": "The Disappearing Details"
+            },
+            {
+              "id": "CS3-01-07",
+              "name": "Map Builder",
+              "learning_objectives": [
+                "Represent a problem using simple symbols, labels, or categories.",
+                "Create a simplified representation of a familiar problem."
+              ],
+              "educational_title": "Build the Simple Map"
+            },
+            {
+              "id": "CS3-01-08",
+              "name": "Sorting Adventure",
+              "learning_objectives": [
+                "Group objects using shared properties.",
+                "Create simple rules for sorting information."
+              ],
+              "educational_title": "The Sorting Wizard"
+            },
+            {
+              "id": "CS3-01-09",
+              "name": "Problem Builder",
+              "learning_objectives": [
+                "Recognize when two problems have similar structures.",
+                "Reuse a known solution strategy for a similar problem."
+              ],
+              "educational_title": "Same Problem, New Adventure"
+            },
+            {
+              "id": "CS3-01-10",
+              "name": "Problem Adventure",
+              "learning_objectives": [
+                "Combine decomposition, patterns, and simplification to solve a problem.",
+                "Explain the main steps used to reach a solution."
+              ],
+              "educational_title": "The Ultimate Problem-Solving Quest"
+            }
+          ]
+        },
+        {
+          "id": "CS3-02",
+          "name": "Algorithms and Smart Instructions",
+          "topics": [
+            {
+              "id": "CS3-02-01",
+              "name": "Recipe Hunt",
+              "learning_objectives": [
+                "Identify the inputs, actions, and expected result of a simple problem.",
+                "Create a step-by-step solution."
+              ],
+              "educational_title": "The Recipe for Success"
+            },
+            {
+              "id": "CS3-02-02",
+              "name": "Mission Builder",
+              "learning_objectives": [
+                "Design an algorithm for a familiar problem.",
+                "Arrange instructions in a logical order."
+              ],
+              "educational_title": "Design the Perfect Mission"
+            },
+            {
+              "id": "CS3-02-03",
+              "name": "Robot Adventure",
+              "learning_objectives": [
+                "Test whether an algorithm produces the expected result.",
+                "Identify problems in an algorithm."
+              ],
+              "educational_title": "Will the Robot Win?"
+            },
+            {
+              "id": "CS3-02-04",
+              "name": "Robot Escape",
+              "learning_objectives": [
+                "Recognize actions that need to repeat.",
+                "Identify when repetition can make instructions shorter."
+              ],
+              "educational_title": "The Repeating Robot"
+            },
+            {
+              "id": "CS3-02-05",
+              "name": "Loop Puzzle",
+              "learning_objectives": [
+                "Create a simple loop in a block-based program.",
+                "Use repetition to complete a repeated task."
+              ],
+              "educational_title": "Loop the Treasure Hunt"
+            },
+            {
+              "id": "CS3-02-06",
+              "name": "Loop Challenge",
+              "learning_objectives": [
+                "Compare simple repetition strategies.",
+                "Choose an appropriate repetition structure for a task."
+              ],
+              "educational_title": "Choose the Best Loop"
+            },
+            {
+              "id": "CS3-02-07",
+              "name": "Decision Battle",
+              "learning_objectives": [
+                "Recognize conditions in a program.",
+                "Understand that a condition can change what happens next."
+              ],
+              "educational_title": "The Magic Decision Door"
+            },
+            {
+              "id": "CS3-02-08",
+              "name": "If Battle",
+              "learning_objectives": [
+                "Create simple conditional behavior.",
+                "Make a program perform an action based on a condition."
+              ],
+              "educational_title": "If This, Then That!"
+            },
+            {
+              "id": "CS3-02-09",
+              "name": "Two Arena",
+              "learning_objectives": [
+                "Test a program using different conditions.",
+                "Predict what will happen for different inputs."
+              ],
+              "educational_title": "The Two-Path Adventure"
+            },
+            {
+              "id": "CS3-02-10",
+              "name": "Algorithm Builder",
+              "learning_objectives": [
+                "Combine sequences, loops, and conditions in a solution.",
+                "Evaluate whether a simple algorithm solves the required problem."
+              ],
+              "educational_title": "The Master Algorithm Challenge"
+            }
+          ]
+        },
+        {
+          "id": "CS3-03",
+          "name": "Block Coding and Game Creation",
+          "topics": [
+            {
+              "id": "CS3-03-01",
+              "name": "Game Builder",
+              "learning_objectives": [
+                "Create a simple programmed character or object.",
+                "Use block-based instructions to control its behavior."
+              ],
+              "educational_title": "Create Your Game Hero"
+            },
+            {
+              "id": "CS3-03-02",
+              "name": "Hero Lab",
+              "learning_objectives": [
+                "Control character movement using commands.",
+                "Create a sequence of movement instructions."
+              ],
+              "educational_title": "Make Your Hero Move"
+            },
+            {
+              "id": "CS3-03-03",
+              "name": "Hero Lab",
+              "learning_objectives": [
+                "Identify incorrect character behavior.",
+                "Debug simple movement or action commands."
+              ],
+              "educational_title": "The Character That Wouldn't Listen"
+            },
+            {
+              "id": "CS3-03-04",
+              "name": "Score Quest",
+              "learning_objectives": [
+                "Understand that a variable can store a changing value.",
+                "Recognize variables such as score, lives, or points."
+              ],
+              "educational_title": "Meet the Score Counter"
+            },
+            {
+              "id": "CS3-03-05",
+              "name": "Coins Hunt",
+              "learning_objectives": [
+                "Create a simple score variable.",
+                "Change a variable when an event occurs."
+              ],
+              "educational_title": "Collect Coins, Count Points"
+            },
+            {
+              "id": "CS3-03-06",
+              "name": "Scoreboard Mission",
+              "learning_objectives": [
+                "Update a variable during a game.",
+                "Use a variable to represent changing game information."
+              ],
+              "educational_title": "The Magic Scoreboard"
+            },
+            {
+              "id": "CS3-03-07",
+              "name": "Press Run",
+              "learning_objectives": [
+                "Understand that events can trigger program actions.",
+                "Create simple event-based behavior."
+              ],
+              "educational_title": "Press Start!"
+            },
+            {
+              "id": "CS3-03-08",
+              "name": "Game Lab",
+              "learning_objectives": [
+                "Make a character respond to user actions.",
+                "Combine events with commands and conditions."
+              ],
+              "educational_title": "The Game That Responds"
+            },
+            {
+              "id": "CS3-03-09",
+              "name": "Code Mission",
+              "learning_objectives": [
+                "Run a program and observe its behavior.",
+                "Identify a mistake by comparing expected and actual results."
+              ],
+              "educational_title": "The Coding Bug Hunt"
+            },
+            {
+              "id": "CS3-03-10",
+              "name": "Mini Builder",
+              "learning_objectives": [
+                "Combine characters, movement, variables, events, and conditions.",
+                "Create a small interactive game or story."
+              ],
+              "educational_title": "Build Your Mini Adventure"
+            }
+          ]
+        },
+        {
+          "id": "CS3-04",
+          "name": "Data Detectives",
+          "topics": [
+            {
+              "id": "CS3-04-01",
+              "name": "Data Puzzle",
+              "learning_objectives": [
+                "Identify text, numbers, images, sounds, and categories as types of data.",
+                "Recognize different forms of digital information."
+              ],
+              "educational_title": "The Data Treasure Chest"
+            },
+            {
+              "id": "CS3-04-02",
+              "name": "Data Sorter",
+              "learning_objectives": [
+                "Classify data according to its type.",
+                "Organize information into simple categories."
+              ],
+              "educational_title": "Sort the Data!"
+            },
+            {
+              "id": "CS3-04-03",
+              "name": "Data Challenge",
+              "learning_objectives": [
+                "Choose suitable data for answering a simple question.",
+                "Explain why particular information is useful."
+              ],
+              "educational_title": "Which Data Do We Need?"
+            },
+            {
+              "id": "CS3-04-04",
+              "name": "Data Run",
+              "learning_objectives": [
+                "Identify simple sources of data.",
+                "Collect a small set of data using a clear question."
+              ],
+              "educational_title": "Become a Data Collector"
+            },
+            {
+              "id": "CS3-04-05",
+              "name": "Data Builder",
+              "learning_objectives": [
+                "Organize collected information in a simple table.",
+                "Use categories to arrange data clearly."
+              ],
+              "educational_title": "Build the Data Table"
+            },
+            {
+              "id": "CS3-04-06",
+              "name": "Data Mission",
+              "learning_objectives": [
+                "Sort a collection of data using a chosen rule.",
+                "Explain how the data was organized."
+              ],
+              "educational_title": "The Data Sorting Machine"
+            },
+            {
+              "id": "CS3-04-07",
+              "name": "Number Hunt",
+              "learning_objectives": [
+                "Compare values in a small dataset.",
+                "Identify greater than, less than, and equal relationships."
+              ],
+              "educational_title": "Find the Biggest Number"
+            },
+            {
+              "id": "CS3-04-08",
+              "name": "Data Escape",
+              "learning_objectives": [
+                "Identify simple patterns in a dataset.",
+                "Recognize repeated or changing values."
+              ],
+              "educational_title": "The Data Pattern Detective"
+            },
+            {
+              "id": "CS3-04-09",
+              "name": "Data Lab",
+              "learning_objectives": [
+                "Describe a simple pattern found in data.",
+                "Use organized data to answer simple questions."
+              ],
+              "educational_title": "What Does the Data Tell Us?"
+            },
+            {
+              "id": "CS3-04-10",
+              "name": "Data Arena",
+              "learning_objectives": [
+                "Collect, organize, compare, and interpret simple data.",
+                "Use data to solve a small mystery or problem."
+              ],
+              "educational_title": "The Great Data Mystery"
+            }
+          ]
+        },
+        {
+          "id": "CS3-05",
+          "name": "Internet Explorers and Digital Safety",
+          "topics": [
+            {
+              "id": "CS3-05-01",
+              "name": "Internet Run",
+              "learning_objectives": [
+                "Understand that the Internet connects computers and devices.",
+                "Recognize common ways people use the Internet."
+              ],
+              "educational_title": "Welcome to the Internet"
+            },
+            {
+              "id": "CS3-05-02",
+              "name": "Internet Run",
+              "learning_objectives": [
+                "Understand that information can travel between connected devices.",
+                "Recognize simple examples of Internet communication."
+              ],
+              "educational_title": "The Internet Delivery Team"
+            },
+            {
+              "id": "CS3-05-03",
+              "name": "Web Explorer",
+              "learning_objectives": [
+                "Recognize webpages as digital content on the Web.",
+                "Identify common parts of a webpage."
+              ],
+              "educational_title": "Explore the Web"
+            },
+            {
+              "id": "CS3-05-04",
+              "name": "Link Tracker",
+              "learning_objectives": [
+                "Recognize hyperlinks.",
+                "Understand that links can take users to different online content."
+              ],
+              "educational_title": "Follow the Mystery Link"
+            },
+            {
+              "id": "CS3-05-05",
+              "name": "Web Adventure",
+              "learning_objectives": [
+                "Compare simple pieces of online information.",
+                "Identify obvious differences between trustworthy and questionable information."
+              ],
+              "educational_title": "The Web Detective"
+            },
+            {
+              "id": "CS3-05-06",
+              "name": "Message Run",
+              "learning_objectives": [
+                "Recognize warning signs in suspicious messages.",
+                "Choose a safe response to unfamiliar online content."
+              ],
+              "educational_title": "The Suspicious Message"
+            },
+            {
+              "id": "CS3-05-07",
+              "name": "Link Battle",
+              "learning_objectives": [
+                "Recognize that unfamiliar links may be unsafe.",
+                "Know when to avoid a link and ask a trusted adult."
+              ],
+              "educational_title": "The Safe Link Mission"
+            },
+            {
+              "id": "CS3-05-08",
+              "name": "Digital Defense",
+              "learning_objectives": [
+                "Identify information that should remain private.",
+                "Understand why account information and passwords should be protected."
+              ],
+              "educational_title": "Protect Your Digital Identity"
+            },
+            {
+              "id": "CS3-05-09",
+              "name": "Choice Quest",
+              "learning_objectives": [
+                "Choose safe actions in common online situations.",
+                "Explain why some online actions are safer than others."
+              ],
+              "educational_title": "The Online Choice Challenge"
+            },
+            {
+              "id": "CS3-05-10",
+              "name": "Internet Arena",
+              "learning_objectives": [
+                "Apply basic Internet, information, and safety skills.",
+                "Solve a multi-step digital safety challenge."
+              ],
+              "educational_title": "The Internet Explorer Final Mission"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 4,
+      "subject": "Computer Science",
+      "level": "Intermediate",
+      "description": "A game-based Computer Science curriculum for Class 4 that develops algorithmic thinking, programming skills, data understanding, computational problem solving, networking knowledge, and responsible digital behavior.",
+      "strands": [
+        {
+          "id": "CS4-01",
+          "name": "Algorithm Adventures",
+          "topics": [
+            {
+              "id": "CS4-01-01",
+              "name": "Mission Arena",
+              "learning_objectives": [
+                "Understand that an algorithm is a clear set of steps for solving a problem.",
+                "Identify what a problem needs before creating its solution."
+              ],
+              "educational_title": "The Mission Begins"
+            },
+            {
+              "id": "CS4-01-02",
+              "name": "Plan Builder",
+              "learning_objectives": [
+                "Arrange instructions in the correct order to complete a task.",
+                "Create a step-by-step solution for a simple problem."
+              ],
+              "educational_title": "Build the Perfect Plan"
+            },
+            {
+              "id": "CS4-01-03",
+              "name": "Robot Planner",
+              "learning_objectives": [
+                "Create instructions that guide a character or robot through a task.",
+                "Check whether instructions produce the intended result."
+              ],
+              "educational_title": "The Robot Needs a Plan"
+            },
+            {
+              "id": "CS4-01-04",
+              "name": "Flowchart Run",
+              "learning_objectives": [
+                "Recognize common parts of a simple flowchart.",
+                "Use a flowchart to represent the steps of a problem."
+              ],
+              "educational_title": "The Flowchart Map"
+            },
+            {
+              "id": "CS4-01-05",
+              "name": "Path Challenge",
+              "learning_objectives": [
+                "Represent a decision using a simple flowchart.",
+                "Follow different paths depending on a condition."
+              ],
+              "educational_title": "Choose Your Path"
+            },
+            {
+              "id": "CS4-01-06",
+              "name": "Algorithm Run",
+              "learning_objectives": [
+                "Trace an algorithm from beginning to end.",
+                "Predict what will happen after following a sequence of instructions."
+              ],
+              "educational_title": "The Algorithm Maze"
+            },
+            {
+              "id": "CS4-01-07",
+              "name": "Broken Hunt",
+              "learning_objectives": [
+                "Identify a step that causes an algorithm to fail.",
+                "Replace an incorrect step with a suitable instruction."
+              ],
+              "educational_title": "Find the Broken Step"
+            },
+            {
+              "id": "CS4-01-08",
+              "name": "Algorithm Lab",
+              "learning_objectives": [
+                "Test an algorithm using different examples.",
+                "Compare the expected result with the actual result."
+              ],
+              "educational_title": "The Algorithm Test Lab"
+            },
+            {
+              "id": "CS4-01-09",
+              "name": "If Hunt",
+              "learning_objectives": [
+                "Recognize that an algorithm may need to handle different situations.",
+                "Modify simple instructions when the input or situation changes."
+              ],
+              "educational_title": "What If Something Changes?"
+            },
+            {
+              "id": "CS4-01-10",
+              "name": "Algorithm Arena",
+              "learning_objectives": [
+                "Design a complete solution using sequences, decisions, and repetition.",
+                "Test and improve the solution until it works correctly."
+              ],
+              "educational_title": "The Ultimate Algorithm Quest"
+            }
+          ]
+        },
+        {
+          "id": "CS4-02",
+          "name": "Smart Coding Adventures",
+          "topics": [
+            {
+              "id": "CS4-02-01",
+              "name": "Variable Quest",
+              "learning_objectives": [
+                "Understand that a variable can store information.",
+                "Create simple variables for values such as score, lives, or name."
+              ],
+              "educational_title": "Meet the Variable Box"
+            },
+            {
+              "id": "CS4-02-02",
+              "name": "Score Adventure",
+              "learning_objectives": [
+                "Change the value stored in a variable.",
+                "Use variables to keep track of changing information."
+              ],
+              "educational_title": "The Changing Score"
+            },
+            {
+              "id": "CS4-02-03",
+              "name": "Game Builder",
+              "learning_objectives": [
+                "Use variables to create a simple score system.",
+                "Update a score when a game event occurs."
+              ],
+              "educational_title": "The Game Scoreboard"
+            },
+            {
+              "id": "CS4-02-04",
+              "name": "Decision Battle",
+              "learning_objectives": [
+                "Use conditions to make a program choose between actions.",
+                "Create simple if-then decisions in a program."
+              ],
+              "educational_title": "The Magic Decision Door"
+            },
+            {
+              "id": "CS4-02-05",
+              "name": "Two Quest",
+              "learning_objectives": [
+                "Use more than one condition in a simple program.",
+                "Understand how multiple conditions can change program behavior."
+              ],
+              "educational_title": "Two Conditions, Two Choices"
+            },
+            {
+              "id": "CS4-02-06",
+              "name": "Machine Escape",
+              "learning_objectives": [
+                "Use loops to repeat instructions.",
+                "Identify tasks that are better solved using repetition."
+              ],
+              "educational_title": "The Looping Machine"
+            },
+            {
+              "id": "CS4-02-07",
+              "name": "Loop Challenge",
+              "learning_objectives": [
+                "Choose an appropriate repetition structure for a task.",
+                "Control how many times an instruction is repeated."
+              ],
+              "educational_title": "Choose the Right Loop"
+            },
+            {
+              "id": "CS4-02-08",
+              "name": "Robot Puzzle",
+              "learning_objectives": [
+                "Recognize when a loop repeats incorrectly.",
+                "Fix a loop that repeats too many or too few times."
+              ],
+              "educational_title": "The Never-Ending Robot"
+            },
+            {
+              "id": "CS4-02-09",
+              "name": "Code Escape",
+              "learning_objectives": [
+                "Combine variables, conditions, and loops in a simple program.",
+                "Predict how a program will behave before running it."
+              ],
+              "educational_title": "The Coding Logic Challenge"
+            },
+            {
+              "id": "CS4-02-10",
+              "name": "Game Builder",
+              "learning_objectives": [
+                "Create a small interactive program using multiple control structures.",
+                "Test and debug the program to make it work correctly."
+              ],
+              "educational_title": "Build the Smart Game"
+            }
+          ]
+        },
+        {
+          "id": "CS4-03",
+          "name": "Code Builders and Game Creators",
+          "topics": [
+            {
+              "id": "CS4-03-01",
+              "name": "Command Quest",
+              "learning_objectives": [
+                "Understand that a group of instructions can be reused.",
+                "Identify repeated actions that could become a reusable command."
+              ],
+              "educational_title": "Meet the Reusable Command"
+            },
+            {
+              "id": "CS4-03-02",
+              "name": "Command Builder",
+              "learning_objectives": [
+                "Create a simple function or custom block.",
+                "Use the custom command to perform a specific task."
+              ],
+              "educational_title": "Create Your Own Command"
+            },
+            {
+              "id": "CS4-03-03",
+              "name": "Command Commander",
+              "learning_objectives": [
+                "Use a function multiple times in a program.",
+                "Recognize how reusable commands reduce repeated code."
+              ],
+              "educational_title": "Call the Same Command Again"
+            },
+            {
+              "id": "CS4-03-04",
+              "name": "Command Commander",
+              "learning_objectives": [
+                "Understand that a function can receive a value.",
+                "Use a simple input value to change what a function does."
+              ],
+              "educational_title": "The Command With a Secret Number"
+            },
+            {
+              "id": "CS4-03-05",
+              "name": "Function Lab",
+              "learning_objectives": [
+                "Use different input values with the same function.",
+                "Create reusable commands that work in different situations."
+              ],
+              "educational_title": "One Function, Many Missions"
+            },
+            {
+              "id": "CS4-03-06",
+              "name": "Game Breaker",
+              "learning_objectives": [
+                "Divide a large programming task into smaller parts.",
+                "Identify which part of a game performs each task."
+              ],
+              "educational_title": "Break the Big Game Apart"
+            },
+            {
+              "id": "CS4-03-07",
+              "name": "Game Builder",
+              "learning_objectives": [
+                "Create separate sections of a program for different tasks.",
+                "Combine the sections to create a complete program."
+              ],
+              "educational_title": "Build the Game in Pieces"
+            },
+            {
+              "id": "CS4-03-08",
+              "name": "Game Mission",
+              "learning_objectives": [
+                "Use events such as clicks, key presses, or collisions to trigger actions.",
+                "Connect an event to an appropriate response."
+              ],
+              "educational_title": "The Game Event Center"
+            },
+            {
+              "id": "CS4-03-09",
+              "name": "Debugging Detective",
+              "learning_objectives": [
+                "Test different parts of a program to find a problem.",
+                "Fix an error without breaking another part of the program."
+              ],
+              "educational_title": "The Debugging Detective"
+            },
+            {
+              "id": "CS4-03-10",
+              "name": "Game Builder",
+              "learning_objectives": [
+                "Combine variables, events, conditions, loops, and reusable commands.",
+                "Design and test a small playable computer game."
+              ],
+              "educational_title": "Create Your Own Mini Game"
+            }
+          ]
+        },
+        {
+          "id": "CS4-04",
+          "name": "Data Detective Adventures",
+          "topics": [
+            {
+              "id": "CS4-04-01",
+              "name": "Data Run",
+              "learning_objectives": [
+                "Recognize data as information that can be collected and used.",
+                "Identify different examples of digital data."
+              ],
+              "educational_title": "What Is Data?"
+            },
+            {
+              "id": "CS4-04-02",
+              "name": "Data Adventure",
+              "learning_objectives": [
+                "Sort information into meaningful groups.",
+                "Choose suitable categories for different types of data."
+              ],
+              "educational_title": "The Data Sorting Challenge"
+            },
+            {
+              "id": "CS4-04-03",
+              "name": "Data Builder",
+              "learning_objectives": [
+                "Organize information in a simple table.",
+                "Use rows and columns to make data easier to understand."
+              ],
+              "educational_title": "Build the Data Table"
+            },
+            {
+              "id": "CS4-04-04",
+              "name": "Data Run",
+              "learning_objectives": [
+                "Collect simple data from a given situation.",
+                "Record collected information accurately."
+              ],
+              "educational_title": "The Data Collection Mission"
+            },
+            {
+              "id": "CS4-04-05",
+              "name": "Data Challenge",
+              "learning_objectives": [
+                "Identify the information needed to answer a simple question.",
+                "Distinguish useful data from unnecessary information."
+              ],
+              "educational_title": "Which Data Do We Need?"
+            },
+            {
+              "id": "CS4-04-06",
+              "name": "Data Builder",
+              "learning_objectives": [
+                "Represent simple data using charts or graphs.",
+                "Choose a suitable visual representation for a small dataset."
+              ],
+              "educational_title": "Turn Data Into a Picture"
+            },
+            {
+              "id": "CS4-04-07",
+              "name": "Data Quest",
+              "learning_objectives": [
+                "Find simple patterns and differences in data.",
+                "Use data to answer questions."
+              ],
+              "educational_title": "The Data Detective"
+            },
+            {
+              "id": "CS4-04-08",
+              "name": "Biggest Puzzle",
+              "learning_objectives": [
+                "Compare values in a dataset.",
+                "Identify the largest, smallest, or most common value in simple data."
+              ],
+              "educational_title": "The Biggest, Smallest and Most"
+            },
+            {
+              "id": "CS4-04-09",
+              "name": "Data Arena",
+              "learning_objectives": [
+                "Interpret information presented in a simple chart or table.",
+                "Explain what a dataset suggests using evidence from the data."
+              ],
+              "educational_title": "Data Can Tell a Story"
+            },
+            {
+              "id": "CS4-04-10",
+              "name": "Data Arena",
+              "learning_objectives": [
+                "Collect, organize, represent, and interpret a small dataset.",
+                "Use data to solve a simple mystery or make a decision."
+              ],
+              "educational_title": "The Great Data Mystery"
+            }
+          ]
+        },
+        {
+          "id": "CS4-05",
+          "name": "Connected World and Digital Defense",
+          "topics": [
+            {
+              "id": "CS4-05-01",
+              "name": "Connected Builder",
+              "learning_objectives": [
+                "Understand that networks connect devices so they can communicate.",
+                "Identify examples of connected devices."
+              ],
+              "educational_title": "Welcome to the Connected World"
+            },
+            {
+              "id": "CS4-05-02",
+              "name": "Message Adventure",
+              "learning_objectives": [
+                "Understand that information can travel between connected devices.",
+                "Describe simple examples of information being shared across a network."
+              ],
+              "educational_title": "The Message Delivery Mission"
+            },
+            {
+              "id": "CS4-05-03",
+              "name": "Network Quest",
+              "learning_objectives": [
+                "Identify common devices found in a home network.",
+                "Understand how devices can connect and share information."
+              ],
+              "educational_title": "Inside the Home Network"
+            },
+            {
+              "id": "CS4-05-04",
+              "name": "Internet Quest",
+              "learning_objectives": [
+                "Understand that the Internet connects many networks and devices.",
+                "Distinguish between a local network and the wider Internet."
+              ],
+              "educational_title": "The Internet Is a Giant Network"
+            },
+            {
+              "id": "CS4-05-05",
+              "name": "Link Battle",
+              "learning_objectives": [
+                "Recognize suspicious links and messages.",
+                "Choose safe actions when receiving unexpected online content."
+              ],
+              "educational_title": "The Suspicious Link Mission"
+            },
+            {
+              "id": "CS4-05-06",
+              "name": "Digital Defense",
+              "learning_objectives": [
+                "Identify common ways accounts and devices can be protected.",
+                "Understand why passwords and private information should be protected."
+              ],
+              "educational_title": "Protect the Digital Castle"
+            },
+            {
+              "id": "CS4-05-07",
+              "name": "Identity Challenge",
+              "learning_objectives": [
+                "Understand that authentication checks whether someone is allowed to access an account.",
+                "Identify examples such as passwords, PINs, and device unlock methods."
+              ],
+              "educational_title": "The Secret Identity Check"
+            },
+            {
+              "id": "CS4-05-08",
+              "name": "Safe Builder",
+              "learning_objectives": [
+                "Recognize risks associated with unknown downloads and software.",
+                "Choose safer actions when downloading or installing something."
+              ],
+              "educational_title": "The Safe Download Challenge"
+            },
+            {
+              "id": "CS4-05-09",
+              "name": "Digital Adventure",
+              "learning_objectives": [
+                "Understand how updates, security software, and careful browsing can improve digital safety.",
+                "Choose appropriate safety actions in different online situations."
+              ],
+              "educational_title": "The Digital Defense Team"
+            },
+            {
+              "id": "CS4-05-10",
+              "name": "Safety Lab",
+              "learning_objectives": [
+                "Apply safe digital practices while solving an online adventure.",
+                "Identify and respond appropriately to common digital safety problems."
+              ],
+              "educational_title": "The Cyber Safety Final Mission"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 5,
+      "subject": "Computer Science",
+      "level": "Intermediate",
+      "description": "A game-based Computer Science curriculum for Class 5 that develops advanced problem-solving, programming, data handling, web creation, networking, cybersecurity, and responsible digital citizenship skills.",
+      "strands": [
+        {
+          "id": "CS5-01",
+          "name": "Computational Problem-Solving Adventures",
+          "topics": [
+            {
+              "id": "CS5-01-01",
+              "name": "Problem Breaker",
+              "learning_objectives": [
+                "Break a larger problem into smaller manageable tasks.",
+                "Identify which smaller tasks are needed to complete a larger mission."
+              ],
+              "educational_title": "Break the Giant Problem"
+            },
+            {
+              "id": "CS5-01-02",
+              "name": "Mission Escape",
+              "learning_objectives": [
+                "Organize smaller tasks in a useful order.",
+                "Create a plan for completing a multi-step problem."
+              ],
+              "educational_title": "The Mission Planning Board"
+            },
+            {
+              "id": "CS5-01-03",
+              "name": "Pattern Hunt",
+              "learning_objectives": [
+                "Identify repeated structures in different problems.",
+                "Use a familiar pattern to help solve a new problem."
+              ],
+              "educational_title": "Find the Repeating Pattern"
+            },
+            {
+              "id": "CS5-01-04",
+              "name": "Clue Adventure",
+              "learning_objectives": [
+                "Separate important information from unnecessary details.",
+                "Create a simpler representation of a problem."
+              ],
+              "educational_title": "The Clue Filter"
+            },
+            {
+              "id": "CS5-01-05",
+              "name": "Problem Mission",
+              "learning_objectives": [
+                "Recognize when two different-looking problems have a similar structure.",
+                "Apply a solution strategy from one situation to another."
+              ],
+              "educational_title": "Same Problem, Different World"
+            },
+            {
+              "id": "CS5-01-06",
+              "name": "Algorithm Lab",
+              "learning_objectives": [
+                "Test an algorithm using different inputs.",
+                "Record and compare the results produced by an algorithm."
+              ],
+              "educational_title": "The Algorithm Test Chamber"
+            },
+            {
+              "id": "CS5-01-07",
+              "name": "Algorithm Catcher",
+              "learning_objectives": [
+                "Identify situations where an algorithm gives an unexpected result.",
+                "Find the step responsible for the problem."
+              ],
+              "educational_title": "Catch the Algorithm Bug"
+            },
+            {
+              "id": "CS5-01-08",
+              "name": "Algorithm Lab",
+              "learning_objectives": [
+                "Remove unnecessary steps from a solution.",
+                "Improve an algorithm while keeping its intended result."
+              ],
+              "educational_title": "Make the Algorithm Smarter"
+            },
+            {
+              "id": "CS5-01-09",
+              "name": "Multiple Mission",
+              "learning_objectives": [
+                "Recognize that the same problem can have different solutions.",
+                "Compare different solution strategies."
+              ],
+              "educational_title": "The Multiple-Solution Challenge"
+            },
+            {
+              "id": "CS5-01-10",
+              "name": "Problem Battle",
+              "learning_objectives": [
+                "Combine decomposition, patterns, abstraction, and algorithms to solve a larger problem.",
+                "Test and improve a complete problem-solving plan."
+              ],
+              "educational_title": "The Master Problem-Solver Quest"
+            }
+          ]
+        },
+        {
+          "id": "CS5-02",
+          "name": "Programming Power-Up",
+          "topics": [
+            {
+              "id": "CS5-02-01",
+              "name": "Code Hunt",
+              "learning_objectives": [
+                "Use sequence, selection, and repetition in programs.",
+                "Identify which programming structure is suitable for a task."
+              ],
+              "educational_title": "The Three Coding Powers"
+            },
+            {
+              "id": "CS5-02-02",
+              "name": "Decision Arena",
+              "learning_objectives": [
+                "Create programs that make decisions based on conditions.",
+                "Use different outcomes for different situations."
+              ],
+              "educational_title": "The Smart Decision Machine"
+            },
+            {
+              "id": "CS5-02-03",
+              "name": "Choice Challenge",
+              "learning_objectives": [
+                "Combine multiple conditions in a program.",
+                "Predict which action will occur for different inputs."
+              ],
+              "educational_title": "The Double-Choice Challenge"
+            },
+            {
+              "id": "CS5-02-04",
+              "name": "Loop Challenge",
+              "learning_objectives": [
+                "Use loops to repeat groups of instructions.",
+                "Choose an appropriate loop for a repeated task."
+              ],
+              "educational_title": "The Loop Master"
+            },
+            {
+              "id": "CS5-02-05",
+              "name": "Loop Arena",
+              "learning_objectives": [
+                "Control how many times a loop runs.",
+                "Use a changing value to control repetition."
+              ],
+              "educational_title": "The Loop Counter"
+            },
+            {
+              "id": "CS5-02-06",
+              "name": "Function Quest",
+              "learning_objectives": [
+                "Create reusable functions for specific tasks.",
+                "Use the same function in different parts of a program."
+              ],
+              "educational_title": "Meet the Super Function"
+            },
+            {
+              "id": "CS5-02-07",
+              "name": "Function Challenge",
+              "learning_objectives": [
+                "Understand that functions can receive input values.",
+                "Use parameters to make one function perform different versions of a task."
+              ],
+              "educational_title": "The Function With a Secret Number"
+            },
+            {
+              "id": "CS5-02-08",
+              "name": "Program Builder",
+              "learning_objectives": [
+                "Divide a larger program into smaller functions or sections.",
+                "Combine separate sections into one working program."
+              ],
+              "educational_title": "Build the Program in Pieces"
+            },
+            {
+              "id": "CS5-02-09",
+              "name": "Debugging Detective",
+              "learning_objectives": [
+                "Use a systematic process to find programming errors.",
+                "Test, fix, and retest a program after making changes."
+              ],
+              "educational_title": "The Debugging Laboratory"
+            },
+            {
+              "id": "CS5-02-10",
+              "name": "Game Builder",
+              "learning_objectives": [
+                "Combine variables, conditions, loops, functions, and events in a game.",
+                "Test and improve a complete interactive program."
+              ],
+              "educational_title": "Create the Ultimate Mini Game"
+            }
+          ]
+        },
+        {
+          "id": "CS5-03",
+          "name": "Data Detectives and Digital Information",
+          "topics": [
+            {
+              "id": "CS5-03-01",
+              "name": "Data Quest",
+              "learning_objectives": [
+                "Understand that data can be organized into fields, rows, and columns.",
+                "Identify different pieces of information in a structured dataset."
+              ],
+              "educational_title": "Enter the Data Vault"
+            },
+            {
+              "id": "CS5-03-02",
+              "name": "Data Builder",
+              "learning_objectives": [
+                "Create a simple structured dataset.",
+                "Choose suitable fields for organizing information."
+              ],
+              "educational_title": "Build Your Data Table"
+            },
+            {
+              "id": "CS5-03-03",
+              "name": "Data Mission",
+              "learning_objectives": [
+                "Identify missing or incomplete information in a dataset.",
+                "Recognize why accurate data is important."
+              ],
+              "educational_title": "The Missing Data Mystery"
+            },
+            {
+              "id": "CS5-03-04",
+              "name": "Data Sorter",
+              "learning_objectives": [
+                "Sort information according to a selected property.",
+                "Compare data before and after sorting."
+              ],
+              "educational_title": "Sort the Data Treasure"
+            },
+            {
+              "id": "CS5-03-05",
+              "name": "Data Challenge",
+              "learning_objectives": [
+                "Filter a dataset using a simple condition.",
+                "Find specific information from a larger collection of data."
+              ],
+              "educational_title": "The Data Filter Mission"
+            },
+            {
+              "id": "CS5-03-06",
+              "name": "Count Counter",
+              "learning_objectives": [
+                "Count and compare values in a dataset.",
+                "Use simple totals and comparisons to answer questions."
+              ],
+              "educational_title": "Count, Compare and Discover"
+            },
+            {
+              "id": "CS5-03-07",
+              "name": "Numbers Builder",
+              "learning_objectives": [
+                "Represent data using a suitable chart or graph.",
+                "Choose a visual representation that makes data easier to understand."
+              ],
+              "educational_title": "Turn Numbers Into Pictures"
+            },
+            {
+              "id": "CS5-03-08",
+              "name": "Chart Quest",
+              "learning_objectives": [
+                "Read information from simple charts and graphs.",
+                "Identify patterns and comparisons shown by a visualization."
+              ],
+              "educational_title": "The Chart Detective"
+            },
+            {
+              "id": "CS5-03-09",
+              "name": "Data Arena",
+              "learning_objectives": [
+                "Use data as evidence when making a simple decision.",
+                "Explain a decision using information from a dataset."
+              ],
+              "educational_title": "The Data Decision Game"
+            },
+            {
+              "id": "CS5-03-10",
+              "name": "Data Solver",
+              "learning_objectives": [
+                "Collect, organize, filter, and interpret a small dataset.",
+                "Use multiple pieces of evidence from data to solve a problem."
+              ],
+              "educational_title": "Solve the Great Data Mystery"
+            }
+          ]
+        },
+        {
+          "id": "CS5-04",
+          "name": "Web Builders and Connected Worlds",
+          "topics": [
+            {
+              "id": "CS5-04-01",
+              "name": "Internet Run",
+              "learning_objectives": [
+                "Understand that networks connect devices so information can be shared.",
+                "Identify examples of devices communicating over a network."
+              ],
+              "educational_title": "How the Internet Connects Us"
+            },
+            {
+              "id": "CS5-04-02",
+              "name": "Network Run",
+              "learning_objectives": [
+                "Understand that information travels between connected devices.",
+                "Describe a simple example of data moving from one device to another."
+              ],
+              "educational_title": "The Network Delivery Mission"
+            },
+            {
+              "id": "CS5-04-03",
+              "name": "Network Quest",
+              "learning_objectives": [
+                "Identify common devices used in a home network.",
+                "Explain how devices can connect and share resources."
+              ],
+              "educational_title": "Inside the Home Network"
+            },
+            {
+              "id": "CS5-04-04",
+              "name": "Internet Battle",
+              "learning_objectives": [
+                "Understand that the Internet connects many networks.",
+                "Distinguish between a local network and the wider Internet."
+              ],
+              "educational_title": "The Internet Is a Giant Web"
+            },
+            {
+              "id": "CS5-04-05",
+              "name": "Web Quest",
+              "learning_objectives": [
+                "Identify webpages, websites, browsers, links, and web servers.",
+                "Understand how these parts work together when people use the Web."
+              ],
+              "educational_title": "Enter the World Wide Web"
+            },
+            {
+              "id": "CS5-04-06",
+              "name": "Happens Challenge",
+              "learning_objectives": [
+                "Describe in simple terms what happens when a browser requests a webpage.",
+                "Trace the basic journey from a user's action to displayed web content."
+              ],
+              "educational_title": "What Happens When You Click?"
+            },
+            {
+              "id": "CS5-04-07",
+              "name": "Webpage Builder",
+              "learning_objectives": [
+                "Recognize basic HTML elements used to structure webpages.",
+                "Create a simple webpage containing headings and text."
+              ],
+              "educational_title": "Build Your First Webpage"
+            },
+            {
+              "id": "CS5-04-08",
+              "name": "Add Builder",
+              "learning_objectives": [
+                "Add simple links and images to a webpage.",
+                "Understand how different HTML elements add content to a page."
+              ],
+              "educational_title": "Add Links and Images"
+            },
+            {
+              "id": "CS5-04-09",
+              "name": "Webpage Run",
+              "learning_objectives": [
+                "Identify simple mistakes in webpage structure.",
+                "Correct basic HTML elements so the webpage displays as intended."
+              ],
+              "educational_title": "The Webpage Repair Shop"
+            },
+            {
+              "id": "CS5-04-10",
+              "name": "Web Builder",
+              "learning_objectives": [
+                "Combine basic HTML elements to create a small webpage.",
+                "Organize content into a clear and usable web page."
+              ],
+              "educational_title": "Create Your Mini Web World"
+            }
+          ]
+        },
+        {
+          "id": "CS5-05",
+          "name": "Cyber Heroes and Digital Citizenship",
+          "topics": [
+            {
+              "id": "CS5-05-01",
+              "name": "Threat Puzzle",
+              "learning_objectives": [
+                "Identify common digital threats such as phishing, malware, and weak passwords.",
+                "Recognize warning signs in suspicious digital situations."
+              ],
+              "educational_title": "The Cyber Threat Hunt"
+            },
+            {
+              "id": "CS5-05-02",
+              "name": "Phishing Mission",
+              "learning_objectives": [
+                "Recognize suspicious messages and fake requests for information.",
+                "Choose a safe response to a possible phishing attempt."
+              ],
+              "educational_title": "The Phishing Trap"
+            },
+            {
+              "id": "CS5-05-03",
+              "name": "Password Builder",
+              "learning_objectives": [
+                "Understand characteristics of strong passwords.",
+                "Explain why passwords should not be shared with others."
+              ],
+              "educational_title": "Build the Strong Password"
+            },
+            {
+              "id": "CS5-05-04",
+              "name": "Mission Arena",
+              "learning_objectives": [
+                "Identify ways to protect digital accounts.",
+                "Choose appropriate security actions in different situations."
+              ],
+              "educational_title": "The Account Protection Mission"
+            },
+            {
+              "id": "CS5-05-05",
+              "name": "Privacy Battle",
+              "learning_objectives": [
+                "Identify information that should be kept private.",
+                "Recognize situations where personal information could be unnecessarily exposed."
+              ],
+              "educational_title": "The Privacy Detective"
+            },
+            {
+              "id": "CS5-05-06",
+              "name": "Digital Puzzle",
+              "learning_objectives": [
+                "Understand that online actions can leave a digital record.",
+                "Recognize how shared content can affect a person's digital presence."
+              ],
+              "educational_title": "Your Digital Footprints"
+            },
+            {
+              "id": "CS5-05-07",
+              "name": "Responsible Puzzle",
+              "learning_objectives": [
+                "Recognize respectful and disrespectful online communication.",
+                "Choose appropriate responses to common online situations."
+              ],
+              "educational_title": "The Responsible Comment Challenge"
+            },
+            {
+              "id": "CS5-05-08",
+              "name": "Real Puzzle",
+              "learning_objectives": [
+                "Identify signs that online information may need checking.",
+                "Distinguish between trustworthy information and information that requires further verification."
+              ],
+              "educational_title": "Real, Fake or Unclear?"
+            },
+            {
+              "id": "CS5-05-09",
+              "name": "Digital Mission",
+              "learning_objectives": [
+                "Combine privacy, security, and responsible communication practices.",
+                "Choose suitable actions when faced with different digital risks."
+              ],
+              "educational_title": "The Digital Safety Strategy"
+            },
+            {
+              "id": "CS5-05-10",
+              "name": "Hero Quest",
+              "learning_objectives": [
+                "Apply cybersecurity and digital citizenship knowledge in a multi-step scenario.",
+                "Solve a digital safety challenge using evidence and safe decision-making."
+              ],
+              "educational_title": "The Cyber Hero Final Mission"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": 6,
+      "subject": "Computer Science",
+      "level": "Advanced",
+      "description": "A game-based Computer Science curriculum for Class 6 that develops advanced computational thinking, programming, data handling, web development, networking, cybersecurity, and introductory artificial intelligence concepts.",
+      "strands": [
+        {
+          "id": "CS6-01",
+          "name": "Master Problem-Solving Missions",
+          "topics": [
+            {
+              "id": "CS6-01-01",
+              "name": "Problem Builder",
+              "learning_objectives": [
+                "Break a complex problem into smaller connected tasks.",
+                "Identify how the smaller tasks work together."
+              ],
+              "educational_title": "The Giant Problem Map"
+            },
+            {
+              "id": "CS6-01-02",
+              "name": "Mission Quest",
+              "learning_objectives": [
+                "Identify which tasks must be completed before others.",
+                "Arrange dependent tasks in a logical order."
+              ],
+              "educational_title": "The Mission Dependency Puzzle"
+            },
+            {
+              "id": "CS6-01-03",
+              "name": "Clue Escape",
+              "learning_objectives": [
+                "Separate important information from unnecessary details.",
+                "Create a simpler representation of a complex problem."
+              ],
+              "educational_title": "The Important Clue Filter"
+            },
+            {
+              "id": "CS6-01-04",
+              "name": "Problem Builder",
+              "learning_objectives": [
+                "Create a simple model showing the important parts of a problem.",
+                "Use a model to understand how different parts are connected."
+              ],
+              "educational_title": "Build the Problem Model"
+            },
+            {
+              "id": "CS6-01-05",
+              "name": "Pattern Challenge",
+              "learning_objectives": [
+                "Recognize similar patterns in different computational problems.",
+                "Apply a known strategy to a new problem."
+              ],
+              "educational_title": "Same Pattern, New Problem"
+            },
+            {
+              "id": "CS6-01-06",
+              "name": "Algorithm Escape",
+              "learning_objectives": [
+                "Compare two algorithms that solve the same problem.",
+                "Identify which solution performs fewer unnecessary steps."
+              ],
+              "educational_title": "Which Algorithm Wins?"
+            },
+            {
+              "id": "CS6-01-07",
+              "name": "Algorithm Adventure",
+              "learning_objectives": [
+                "Recognize that some solutions require more work than others.",
+                "Improve a simple algorithm by reducing unnecessary operations."
+              ],
+              "educational_title": "The Algorithm Speed Challenge"
+            },
+            {
+              "id": "CS6-01-08",
+              "name": "Boundary Mission",
+              "learning_objectives": [
+                "Test an algorithm using unusual or boundary inputs.",
+                "Identify situations where an algorithm does not behave as expected."
+              ],
+              "educational_title": "The Boundary Case Mystery"
+            },
+            {
+              "id": "CS6-01-09",
+              "name": "Multiple Builder",
+              "learning_objectives": [
+                "Develop more than one possible solution to a problem.",
+                "Compare solutions using clear criteria such as simplicity or number of steps."
+              ],
+              "educational_title": "The Multiple-Solution Battle"
+            },
+            {
+              "id": "CS6-01-10",
+              "name": "Problem Puzzle",
+              "learning_objectives": [
+                "Combine decomposition, abstraction, pattern recognition, and algorithm design.",
+                "Develop, test, and improve a complete computational solution."
+              ],
+              "educational_title": "The Ultimate Problem-Solver Quest"
+            }
+          ]
+        },
+        {
+          "id": "CS6-02",
+          "name": "Programming Power Lab",
+          "topics": [
+            {
+              "id": "CS6-02-01",
+              "name": "Algorithm Run",
+              "learning_objectives": [
+                "Design a multi-step algorithm using sequence, selection, and repetition.",
+                "Represent an algorithm using pseudocode or a flowchart."
+              ],
+              "educational_title": "The Algorithm Blueprint"
+            },
+            {
+              "id": "CS6-02-02",
+              "name": "Code Challenge",
+              "learning_objectives": [
+                "Convert an algorithm into a working program.",
+                "Choose suitable programming structures for different tasks."
+              ],
+              "educational_title": "From Blueprint to Code"
+            },
+            {
+              "id": "CS6-02-03",
+              "name": "Variable Hunt",
+              "learning_objectives": [
+                "Use variables to store and update information.",
+                "Use variables to control program behavior."
+              ],
+              "educational_title": "The Variable Control Room"
+            },
+            {
+              "id": "CS6-02-04",
+              "name": "Decision Arena",
+              "learning_objectives": [
+                "Create programs containing multiple related conditions.",
+                "Predict program behavior when different conditions are met."
+              ],
+              "educational_title": "The Nested Decision Maze"
+            },
+            {
+              "id": "CS6-02-05",
+              "name": "Loop Run",
+              "learning_objectives": [
+                "Recognize situations where one loop can operate inside another.",
+                "Use nested repetition to solve a structured problem."
+              ],
+              "educational_title": "The Loop Within a Loop"
+            },
+            {
+              "id": "CS6-02-06",
+              "name": "Function Arena",
+              "learning_objectives": [
+                "Create reusable functions for specific tasks.",
+                "Use multiple functions together in a larger program."
+              ],
+              "educational_title": "The Function Factory"
+            },
+            {
+              "id": "CS6-02-07",
+              "name": "Functions Battle",
+              "learning_objectives": [
+                "Use parameters to pass information into functions.",
+                "Use the same function with different input values."
+              ],
+              "educational_title": "Functions With Inputs"
+            },
+            {
+              "id": "CS6-02-08",
+              "name": "Debugging Detective",
+              "learning_objectives": [
+                "Identify logical and behavior errors in a program.",
+                "Debug a program by testing, correcting, and retesting it."
+              ],
+              "educational_title": "The Debugging Investigation"
+            },
+            {
+              "id": "CS6-02-09",
+              "name": "Testing Mission",
+              "learning_objectives": [
+                "Create test cases for normal, unusual, and boundary inputs.",
+                "Use test results to identify weaknesses in a program."
+              ],
+              "educational_title": "The Testing Arena"
+            },
+            {
+              "id": "CS6-02-10",
+              "name": "Code Builder",
+              "learning_objectives": [
+                "Combine variables, conditions, loops, functions, and events in one project.",
+                "Create, test, debug, and improve a complete interactive program."
+              ],
+              "educational_title": "Build the Final Coding Challenge"
+            }
+          ]
+        },
+        {
+          "id": "CS6-03",
+          "name": "Data Detectives and Digital Systems",
+          "topics": [
+            {
+              "id": "CS6-03-01",
+              "name": "Data Run",
+              "learning_objectives": [
+                "Identify situations where multiple related values need to be stored.",
+                "Organize collected information in a structured way."
+              ],
+              "educational_title": "The Data Collection Mission"
+            },
+            {
+              "id": "CS6-03-02",
+              "name": "Data Quest",
+              "learning_objectives": [
+                "Understand how a list can store multiple related values.",
+                "Access and change values stored in a list."
+              ],
+              "educational_title": "Meet the Data List"
+            },
+            {
+              "id": "CS6-03-03",
+              "name": "List Hunt",
+              "learning_objectives": [
+                "Use loops to process values stored in a list.",
+                "Find or compare values within a collection of data."
+              ],
+              "educational_title": "The List Processing Challenge"
+            },
+            {
+              "id": "CS6-03-04",
+              "name": "Digital Quest",
+              "learning_objectives": [
+                "Understand a database as an organized collection of information.",
+                "Identify tables, fields, and records in a simple database."
+              ],
+              "educational_title": "Enter the Digital Database"
+            },
+            {
+              "id": "CS6-03-05",
+              "name": "Database Builder",
+              "learning_objectives": [
+                "Create a simple database table for a specific purpose.",
+                "Choose appropriate fields for the information being stored."
+              ],
+              "educational_title": "Build the Database Table"
+            },
+            {
+              "id": "CS6-03-06",
+              "name": "Database Mission",
+              "learning_objectives": [
+                "Search a database for records matching a condition.",
+                "Identify specific information from a larger collection of records."
+              ],
+              "educational_title": "The Database Search Mission"
+            },
+            {
+              "id": "CS6-03-07",
+              "name": "Database Arena",
+              "learning_objectives": [
+                "Filter records using one or more conditions.",
+                "Compare filtered results with the original dataset."
+              ],
+              "educational_title": "The Database Filter Challenge"
+            },
+            {
+              "id": "CS6-03-08",
+              "name": "Data Run",
+              "learning_objectives": [
+                "Identify missing, duplicated, or inconsistent data.",
+                "Improve a small dataset by correcting simple data problems."
+              ],
+              "educational_title": "The Data Cleanup Mission"
+            },
+            {
+              "id": "CS6-03-09",
+              "name": "Data Hunt",
+              "learning_objectives": [
+                "Interpret patterns and relationships in a dataset.",
+                "Use data as evidence to answer questions or make decisions."
+              ],
+              "educational_title": "The Data Story Detective"
+            },
+            {
+              "id": "CS6-03-10",
+              "name": "Digital Solver",
+              "learning_objectives": [
+                "Search, filter, organize, and interpret information from a dataset.",
+                "Use multiple pieces of evidence to solve a data-based problem."
+              ],
+              "educational_title": "Solve the Digital Data Mystery"
+            }
+          ]
+        },
+        {
+          "id": "CS6-04",
+          "name": "Web Worlds and Connected Systems",
+          "topics": [
+            {
+              "id": "CS6-04-01",
+              "name": "Network Commander",
+              "learning_objectives": [
+                "Identify common devices and components in a network.",
+                "Explain how connected devices communicate and share information."
+              ],
+              "educational_title": "The Network Command Center"
+            },
+            {
+              "id": "CS6-04-02",
+              "name": "Mission Quest",
+              "learning_objectives": [
+                "Understand the basic roles of clients and servers.",
+                "Describe how a client can request information from a server."
+              ],
+              "educational_title": "The Client and Server Mission"
+            },
+            {
+              "id": "CS6-04-03",
+              "name": "Data Tracker",
+              "learning_objectives": [
+                "Trace the basic journey of information between connected devices.",
+                "Explain the difference between a request and a response."
+              ],
+              "educational_title": "Follow the Data Journey"
+            },
+            {
+              "id": "CS6-04-04",
+              "name": "Web Quest",
+              "learning_objectives": [
+                "Identify HTML, CSS, and JavaScript as technologies used in web development.",
+                "Explain the different roles of structure, styling, and behavior."
+              ],
+              "educational_title": "Enter the Web Builder Lab"
+            },
+            {
+              "id": "CS6-04-05",
+              "name": "Webpage Builder",
+              "learning_objectives": [
+                "Create a webpage using basic HTML elements.",
+                "Organize headings, paragraphs, links, and images into a clear structure."
+              ],
+              "educational_title": "Build the Webpage Skeleton"
+            },
+            {
+              "id": "CS6-04-06",
+              "name": "Digital Studio",
+              "learning_objectives": [
+                "Use basic CSS concepts to change the appearance of webpage elements.",
+                "Apply simple styling to improve the presentation of a webpage."
+              ],
+              "educational_title": "Style the Digital World"
+            },
+            {
+              "id": "CS6-04-07",
+              "name": "Page Lab",
+              "learning_objectives": [
+                "Understand that JavaScript can add behavior to a webpage.",
+                "Create a simple interaction such as a button response."
+              ],
+              "educational_title": "Make the Page Respond"
+            },
+            {
+              "id": "CS6-04-08",
+              "name": "Web Arena",
+              "learning_objectives": [
+                "Understand that websites can exchange structured information.",
+                "Recognize that applications can request data from other services."
+              ],
+              "educational_title": "The Web Data Mission"
+            },
+            {
+              "id": "CS6-04-09",
+              "name": "API Hunt",
+              "learning_objectives": [
+                "Understand an API as a way for software systems to communicate.",
+                "Trace a simple request-and-response interaction with a data service."
+              ],
+              "educational_title": "The API Treasure Hunt"
+            },
+            {
+              "id": "CS6-04-10",
+              "name": "Web Builder",
+              "learning_objectives": [
+                "Combine HTML, CSS, and simple JavaScript interactions.",
+                "Create a small interactive webpage as a complete project."
+              ],
+              "educational_title": "Build Your Interactive Web World"
+            }
+          ]
+        },
+        {
+          "id": "CS6-05",
+          "name": "Cyber Heroes and AI Explorers",
+          "topics": [
+            {
+              "id": "CS6-05-01",
+              "name": "Threat Puzzle",
+              "learning_objectives": [
+                "Identify common cybersecurity threats such as phishing, malware, and unauthorized access.",
+                "Recognize warning signs in different digital situations."
+              ],
+              "educational_title": "The Cyber Threat Hunt"
+            },
+            {
+              "id": "CS6-05-02",
+              "name": "Phishing Challenge",
+              "learning_objectives": [
+                "Analyze suspicious messages and identify possible phishing attempts.",
+                "Choose an appropriate response to a suspicious online request."
+              ],
+              "educational_title": "The Phishing Investigation"
+            },
+            {
+              "id": "CS6-05-03",
+              "name": "Digital Defense",
+              "learning_objectives": [
+                "Apply strong password and account protection practices.",
+                "Choose appropriate security measures for different scenarios."
+              ],
+              "educational_title": "Protect the Digital Fortress"
+            },
+            {
+              "id": "CS6-05-04",
+              "name": "Message Arena",
+              "learning_objectives": [
+                "Understand the basic purpose of encryption.",
+                "Encode and decode messages using a simple educational cipher."
+              ],
+              "educational_title": "The Secret Message Lab"
+            },
+            {
+              "id": "CS6-05-05",
+              "name": "Privacy Battle",
+              "learning_objectives": [
+                "Identify risks associated with sharing personal information.",
+                "Choose safer ways to manage personal and digital information."
+              ],
+              "educational_title": "The Privacy Detective"
+            },
+            {
+              "id": "CS6-05-06",
+              "name": "AI Quest",
+              "learning_objectives": [
+                "Identify familiar examples of artificial intelligence.",
+                "Explain at a basic level how AI systems use data and patterns to produce results."
+              ],
+              "educational_title": "Meet Artificial Intelligence"
+            },
+            {
+              "id": "CS6-05-07",
+              "name": "Machine Trainer",
+              "learning_objectives": [
+                "Understand that machine-learning systems can learn patterns from examples.",
+                "Identify examples of data that could be used to train an AI system."
+              ],
+              "educational_title": "Teach the Machine"
+            },
+            {
+              "id": "CS6-05-08",
+              "name": "AI Puzzle",
+              "learning_objectives": [
+                "Recognize that AI systems can produce incorrect or incomplete results.",
+                "Check an AI-generated result against available evidence."
+              ],
+              "educational_title": "When AI Gets It Wrong"
+            },
+            {
+              "id": "CS6-05-09",
+              "name": "AI Battle",
+              "learning_objectives": [
+                "Understand that the data used by an AI system can affect its results.",
+                "Recognize simple examples of unfair or unbalanced AI outcomes."
+              ],
+              "educational_title": "The Fair AI Challenge"
+            },
+            {
+              "id": "CS6-05-10",
+              "name": "Mission Adventure",
+              "learning_objectives": [
+                "Apply programming, data, networking, cybersecurity, and AI concepts to a multi-step challenge.",
+                "Design a responsible technology solution for a defined problem."
+              ],
+              "educational_title": "The Future Tech Final Mission"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
