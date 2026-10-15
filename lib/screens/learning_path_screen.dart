@@ -441,106 +441,94 @@ Widget _buildWorld(
   // ADVENTURE MAP
   // ==================================================================
 
-  Widget _buildAdventureMap(
-    BuildContext context,
-    List<CurriculumTopic> topics,
-  ) {
-    return Container(
-      width: double.infinity,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(34),
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            Colors.white.withOpacity(0.76),
-            const Color(0xFFEAF7FF)
-                .withOpacity(0.76),
-            const Color(0xFFEDE9FE)
-                .withOpacity(0.82),
-          ],
+ 
+Widget _buildAdventureMap(
+  BuildContext context,
+  List<CurriculumTopic> topics,
+) {
+  return Container(
+    width: double.infinity,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(34),
+      gradient: LinearGradient(
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        colors: [
+          Colors.white.withOpacity(0.76),
+          const Color(0xFFEAF7FF).withOpacity(0.76),
+          const Color(0xFFEDE9FE).withOpacity(0.82),
+        ],
+      ),
+      border: Border.all(
+        color: Colors.white.withOpacity(0.92),
+        width: 1.4,
+      ),
+      boxShadow: [
+        BoxShadow(
+          color: const Color(0xFF7C3AED).withOpacity(0.12),
+          blurRadius: 28,
+          offset: const Offset(0, 13),
         ),
-        border: Border.all(
-          color: Colors.white.withOpacity(0.92),
-          width: 1.4,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: const Color(0xFF7C3AED)
-                .withOpacity(0.12),
-            blurRadius: 28,
-            offset: const Offset(0, 13),
+      ],
+    ),
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(34),
+      child: Stack(
+        children: [
+          // Adventure map background decoration.
+          Positioned.fill(
+            child: CustomPaint(
+              painter: _WorldDecorationPainter(),
+            ),
+          ),
+
+          // All missions are temporarily unlocked.
+          Padding(
+            padding: const EdgeInsets.fromLTRB(
+              15,
+              25,
+              15,
+              30,
+            ),
+            child: Column(
+              children: [
+                for (int i = 0; i < topics.length; i++) ...[
+                  _GameMission(
+                    number: i + 1,
+                    topicName: topics[i].name,
+                    // Only the first mission is unlocked for now.
+                    unlocked: i == 0,
+                    alignment: i.isEven
+                        ? Alignment.centerLeft
+                        : Alignment.centerRight,
+                    // Later missions unlock after progression is implemented.
+                    onTap: i == 0
+                        ? () {
+                            _showGameChoice(
+                              context,
+                              topics[i].name,
+                            );
+                          }
+                        : null,
+                  ),
+
+                  // Connect each mission to the next one.
+                  if (i < topics.length - 1)
+                    _buildConnection(i.isEven),
+                ],
+
+                const SizedBox(height: 18),
+
+                // Adventure completion gate.
+                _buildEndGate(),
+              ],
+            ),
           ),
         ],
       ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(34),
-        child: Stack(
-          children: [
-            // MAP DECORATION
-            Positioned.fill(
-              child: CustomPaint(
-                painter: _WorldDecorationPainter(),
-              ),
-            ),
-
-            // --------------------------------------------------------
-            // MISSION LIST
-            // --------------------------------------------------------
-            Padding(
-              padding: const EdgeInsets.fromLTRB(
-                15,
-                25,
-                15,
-                30,
-              ),
-              child: Column(
-                children: [
-                  for (int i = 0;
-                      i < topics.length;
-                      i++) ...[
-                    _GameMission(
-                      number: i + 1,
-                      topicName: topics[i].name,
-
-                      // Only first mission is unlocked
-                      unlocked: i == 0,
-
-                      // Alternate left/right
-                      alignment: i.isEven
-                          ? Alignment.centerLeft
-                          : Alignment.centerRight,
-
-                      // Only first mission can be played
-                      onTap: i == 0
-                          ? () {
-                              _showGameChoice(
-                                context,
-                                topics[i].name,
-                              );
-                            }
-                          : null,
-                    ),
-
-                    // Connecting path
-                    if (i < topics.length - 1)
-                      _buildConnection(
-                        i.isEven,
-                      ),
-                  ],
-
-                  const SizedBox(height: 18),
-
-                  // END GATE
-                  _buildEndGate(),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+    ),
+  );
+}
 
   // ==================================================================
   // CONNECTION PATH
@@ -713,6 +701,7 @@ Widget _buildWorld(
           topicName: topicName,
           classNumber: widget.classNumber,
           subject: widget.subject,
+          assetPath: widget.assetPath,
         );
       },
     );
@@ -1030,11 +1019,13 @@ class _GameModeSheet extends StatelessWidget {
   final String topicName;
   final int classNumber;
   final String subject;
+  final String assetPath;
 
   const _GameModeSheet({
     required this.topicName,
     required this.classNumber,
     required this.subject,
+    required this.assetPath,
   });
 
   @override
@@ -1182,6 +1173,7 @@ class _GameModeSheet extends StatelessWidget {
                             classNumber:
                                 classNumber,
                             subject: subject,
+                            curriculumPath: assetPath,
                             mode: 'mystery',
                           ),
                         ),

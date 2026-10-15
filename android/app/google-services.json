@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "185592222166",
+    "project_id": "nexlearn-6a1a3",
+    "storage_bucket": "nexlearn-6a1a3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185592222166:android:31f64573b0104eeaf55477",
+        "android_client_info": {
+          "package_name": "com.example.nexlearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1uIz_whTI17I9HDPOx3uOT1tt9H4lgJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -43,3 +43,20 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local logs and temporary backups
+*.log
+*.backup
+*.save
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
+# Firebase private credentials
+service-account*.json
+*-service-account*.json
+
+# Generated Flutter files
+.flutter-plugins-dependencies*

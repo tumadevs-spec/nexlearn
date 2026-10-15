@@ -1,0 +1,73 @@
+{
+  "emulators": {
+    "dataconnect": {
+      "dataDir": "dataconnect/.dataconnect/pgliteData"
+    },
+    "auth": {
+      "port": 9099
+    },
+    "functions": {
+      "port": 5001
+    }
+  },
+  "dataconnect": {
+    "source": "dataconnect"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint",
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ],
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "nexlearn-6a1a3",
+          "appId": "1:185592222166:android:31f64573b0104eeaf55477",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "nexlearn-6a1a3",
+          "appId": "1:185592222166:ios:3d11c32d9ad4ff0bf55477",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "nexlearn-6a1a3",
+          "appId": "1:185592222166:ios:3d11c32d9ad4ff0bf55477",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "nexlearn-6a1a3",
+          "configurations": {
+            "android": "1:185592222166:android:31f64573b0104eeaf55477",
+            "ios": "1:185592222166:ios:3d11c32d9ad4ff0bf55477",
+            "macos": "1:185592222166:ios:3d11c32d9ad4ff0bf55477",
+            "web": "1:185592222166:web:3fc145044a93986bf55477",
+            "windows": "1:185592222166:web:7808b35a832fe60af55477"
+          }
+        }
+      }
+    }
+  }
+}

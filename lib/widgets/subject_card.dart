@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'learning_path_screen.dart';
+import '../screens/learning_path_screen.dart';
 
 // ================================================================
 // PALETTE

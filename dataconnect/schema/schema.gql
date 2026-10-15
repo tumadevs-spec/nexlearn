@@ -1,0 +1,47 @@
+type User @table {
+  fullName: String!
+  email: String!
+  homeAddress: String!
+  phoneNumber: String
+  bio: String
+  profileImageUrl: String
+  neighborhood: Neighborhood
+}
+
+type Neighborhood @table {
+  name: String!
+  city: String!
+  postalCode: String!
+}
+
+type Item @table {
+  name: String!
+  category: String!
+  status: String!
+  description: String
+  imageUrl: String
+  owner: User!
+}
+
+type Event @table {
+  title: String!
+  startTime: Timestamp!
+  location: String!
+  description: String
+  maxAttendees: Int
+  neighborhood: Neighborhood!
+}
+
+type Post @table {
+  content: String!
+  type: String!
+  createdAt: Timestamp!
+  author: User!
+  neighborhood: Neighborhood!
+}
+
+type Rsvp @table {
+  status: String!
+  user: User!
+  event: Event!
+}
