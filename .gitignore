@@ -60,3 +60,7 @@ service-account*.json
 
 # Generated Flutter files
 .flutter-plugins-dependencies*
+
+functions/node_modules/
+functions/lib/
+functions/build/

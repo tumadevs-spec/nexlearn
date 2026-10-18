@@ -15,5 +15,5 @@
   "compileOnSave": true,
   "include": [
     "src"
-  ]
+, "lib/spec_v2.ts"  ]
 }
