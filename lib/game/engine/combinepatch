@@ -1,0 +1,201 @@
+# "combine" puzzle: small patches
+
+Two files are full replacements (`mechanic_registry.dart`, `puzzle_sheet.dart`).
+Everything below is a small edit to an existing file. Apply them in order.
+
+## 1. `functions/src/lib/spec_v2.ts` (TypeScript)
+
+**1a.** Add the mechanic:
+
+```ts
+export const SUPPORTED_MECHANICS = [
+  "codeLock",
+  "sequence",
+  "matching",
+  "choice",
+  "combine",
+] as const;
+```
+
+**1b.** Add two limits inside `COUNTS`:
+
+```ts
+  minCombineClues: 2,
+  maxCombineClues: 3,
+```
+
+**1c.** Add the field to `PuzzleConfig`:
+
+```ts
+export type PuzzleConfig = {
+  answer?: string;
+  items?: string[];
+  pairs?: {left: string; right: string}[];
+  options?: string[];
+  correctIndex?: number;
+  clues?: string[];
+};
+```
+
+**1d.** In `readConfig`, add a new case before `default:`:
+
+```ts
+    case "combine": {
+      const list = Array.isArray(raw.clues) ?
+        raw.clues
+          .filter((c: unknown): c is string => typeof c === "string")
+          .map((c) => c.trim()) :
+        [];
+      if (
+        !Array.isArray(raw.clues) ||
+        list.length !== raw.clues.length ||
+        list.length < COUNTS.minCombineClues ||
+        list.length > COUNTS.maxCombineClues
+      ) {
+        report.issues.push(
+          `${path}.clues: needs ${COUNTS.minCombineClues}-` +
+          `${COUNTS.maxCombineClues} evidence ids`);
+        return {};
+      }
+      if (
+        new Set(list).size !== list.length ||
+        list.some((c) => !/^[A-Za-z0-9_]{1,40}$/.test(c))
+      ) {
+        report.issues.push(`${path}.clues: must be unique ids`);
+      }
+      return {clues: list};
+    }
+```
+
+**1e.** In `checkStructure`, right after this existing block:
+
+```ts
+  for (const e of evidence) e.requires = cleanRequires(e.id, e.requires);
+  for (const i of items) {
+    i.place.requires = cleanRequires(i.puzzle.id, i.place.requires);
+  }
+```
+
+add:
+
+```ts
+  // A combine puzzle can only use clues the child has collected, so the
+  // puzzle must require every clue it asks for.
+  for (const i of items) {
+    if (i.puzzle.type !== "combine") continue;
+    for (const clue of i.puzzle.config.clues ?? []) {
+      if (!evidenceIds.has(clue)) {
+        report.issues.push(
+          `puzzle "${i.puzzle.id}": combine clue "${clue}" ` +
+          "is not an evidence id");
+      } else if (!i.place.requires.includes(clue)) {
+        i.place.requires.push(clue);
+        report.repairs.push(
+          `"${i.puzzle.id}": now requires combine clue "${clue}"`);
+      }
+    }
+  }
+```
+
+## 2. Tests (add to the validator test file, before the final `console.log`)
+
+```js
+run("combine puzzle passes and requires its clues",
+  (s) => {
+    s.puzzles[3] = {
+      id: "puzzle_final", type: "combine",
+      prompt: "Which two clues show why the robot stopped?",
+      config: {clues: ["ev_1", "ev_3"]},
+      feedbackCorrect: "Yes!", feedbackWrong: "Look again.",
+      hint: "Check the tray and the label.", skill: "reasoning",
+      name: "Case board", x: 0.70, y: 0.34, sceneText: "Put it together.",
+      requires: ["puzzle_3"], lockedText: "Solve the parts first.",
+    };
+  },
+  (r) => {
+    assert.deepEqual(r.issues, []);
+    const spot = r.spec.entities.find((e) => e.puzzleId === "puzzle_final");
+    assert.ok(spot.requires.includes("ev_1"));
+    assert.ok(spot.requires.includes("ev_3"));
+    assert.deepEqual(r.spec.puzzles[3].config.clues, ["ev_1", "ev_3"]);
+  });
+
+run("combine with an unknown clue id is rejected",
+  (s) => {
+    s.puzzles[3].type = "combine";
+    s.puzzles[3].config = {clues: ["ev_1", "ev_99"]};
+  },
+  (r) => assert.ok(has(r.issues, "combine clue")));
+
+run("combine with one clue is rejected",
+  (s) => {
+    s.puzzles[3].type = "combine";
+    s.puzzles[3].config = {clues: ["ev_1"]};
+  },
+  (r) => assert.ok(has(r.issues, "clues")));
+```
+
+## 3. `lib/game/spec/adventure_spec.dart`
+
+In `_crossCheck`, right after the `final evidenceIds = ...toSet();` line, add:
+
+```dart
+  for (final p in puzzles) {
+    if (p.type != 'combine') continue;
+    final clues = p.config['clues'];
+    if (clues is List) {
+      for (final clue in clues) {
+        if (!evidenceIds.contains(clue)) {
+          errors.add(
+            'puzzle "${p.id}" combines "$clue", which is not an evidence id',
+          );
+        }
+      }
+    }
+  }
+```
+
+## 4. `lib/screens/mystery_game_screen.dart`
+
+In `_openPuzzle`, replace the `builder:` of `showModalBottomSheet` with:
+
+```dart
+        builder: (sheetContext) {
+          final found = state.spec.entities
+              .where((e) =>
+                  e.type == EntityType.evidence &&
+                  state.evidence.contains(e.id))
+              .toList();
+
+          return PuzzleSheet(
+            puzzle: puzzle,
+            clues: found,
+            onSubmit: (answer) => state.submit(puzzle.id, answer),
+          );
+        },
+```
+
+## 5. `lib/game/world/mystery_world.dart`
+
+In `_emojiFor`, inside `switch (puzzle?.type)`, add before `default:`:
+
+```dart
+          case 'combine':
+            return '🧠';
+```
+
+## 6. Gemini prompt (in `functions/src/index.ts`)
+
+Add this to the list of mechanics the prompt describes:
+
+```
+combine: the player picks the evidence items that together explain the case.
+  config: {"clues": ["ev_1", "ev_3"]}  (2-3 evidence ids, taken from the
+  evidence list). Use it for the final puzzle. The prompt must ask for the
+  cause, for example "Which two clues show why the robot stopped?".
+  The clues must be the ones that really prove the answer; other evidence
+  items should be plausible but wrong choices.
+```
+
+Also tell Gemini: "Make puzzle_final a combine puzzle whenever there are at
+least 4 evidence items."

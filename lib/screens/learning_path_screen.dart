@@ -1,4 +1,3 @@
-
 import 'dart:math' as math;
 
 import 'package:flame/components.dart';
@@ -12,6 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../models/curriculum_model.dart';
 import '../services/curriculum_service.dart';
+import '../services/progress_service.dart';
 import 'action_game_screen.dart';
 import 'mystery_game_screen.dart';
 
@@ -41,6 +41,9 @@ class _LearningPathScreenState
   late AnimationController _animationController;
   late AdventureWorldGame _game;
 
+  // Names of topics the player has completed (saved on device).
+  Set<String> _completed = {};
+
   @override
   void initState() {
     super.initState();
@@ -54,6 +57,8 @@ class _LearningPathScreenState
     )..repeat(reverse: true);
 
     _game = AdventureWorldGame();
+
+    _loadProgress();
   }
 
   @override
@@ -61,6 +66,26 @@ class _LearningPathScreenState
     _animationController.dispose();
     _game.pauseEngine();
     super.dispose();
+  }
+
+  // ==================================================================
+  // PROGRESS
+  // ==================================================================
+
+  Future<void> _loadProgress() async {
+    final done = await ProgressService.loadCompleted(
+      widget.subject,
+      widget.classNumber,
+    );
+    if (!mounted) return;
+    setState(() => _completed = done);
+  }
+
+  /// First mission is always open. Every other mission opens once the
+  /// mission before it has been completed.
+  bool _isUnlocked(List<CurriculumTopic> topics, int i) {
+    if (i == 0) return true;
+    return _completed.contains(topics[i - 1].name);
   }
 
   @override
@@ -241,85 +266,86 @@ class _LearningPathScreenState
       ),
     );
   }
-Widget _buildWorld(
-  BuildContext context,
-  List<CurriculumTopic> topics,
-) {
-  return Column(
-    children: [
-      Padding(
-        padding: const EdgeInsets.fromLTRB(
-          16,
-          8,
-          16,
-          0,
-        ),
-        child: Align(
-          alignment: Alignment.centerLeft,
-          child: GestureDetector(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: Container(
-              width: 45,
-              height: 45,
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.76),
-                borderRadius: BorderRadius.circular(15),
-                border: Border.all(
-                  color: Colors.white.withOpacity(0.95),
-                  width: 1.2,
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0xFF7C3AED)
-                        .withOpacity(0.09),
-                    blurRadius: 13,
-                    offset: const Offset(0, 5),
+
+  Widget _buildWorld(
+    BuildContext context,
+    List<CurriculumTopic> topics,
+  ) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(
+            16,
+            8,
+            16,
+            0,
+          ),
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Container(
+                width: 45,
+                height: 45,
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.76),
+                  borderRadius: BorderRadius.circular(15),
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.95),
+                    width: 1.2,
                   ),
-                ],
-              ),
-              child: const Icon(
-                Icons.arrow_back_rounded,
-                color: Color(0xFF3B0764),
-                size: 22,
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFF7C3AED)
+                          .withOpacity(0.09),
+                      blurRadius: 13,
+                      offset: const Offset(0, 5),
+                    ),
+                  ],
+                ),
+                child: const Icon(
+                  Icons.arrow_back_rounded,
+                  color: Color(0xFF3B0764),
+                  size: 22,
+                ),
               ),
             ),
           ),
         ),
-      ),
 
-      Expanded(
-        child: SingleChildScrollView(
-          physics: const BouncingScrollPhysics(),
-          padding: const EdgeInsets.fromLTRB(
-            18,
-            18,
-            18,
-            34,
-          ),
-          child: Column(
-            children: [
-              _buildHero(),
+        Expanded(
+          child: SingleChildScrollView(
+            physics: const BouncingScrollPhysics(),
+            padding: const EdgeInsets.fromLTRB(
+              18,
+              18,
+              18,
+              34,
+            ),
+            child: Column(
+              children: [
+                _buildHero(),
 
-              const SizedBox(height: 22),
+                const SizedBox(height: 22),
 
-              _buildAdventureMap(
-                context,
-                topics,
-              ),
+                _buildAdventureMap(
+                  context,
+                  topics,
+                ),
 
-              const SizedBox(height: 22),
+                const SizedBox(height: 22),
 
-              _buildDestination(),
-            ],
+                _buildDestination(),
+              ],
+            ),
           ),
         ),
-      ),
-    ],
-  );
-}
-  
+      ],
+    );
+  }
+
   // ==================================================================
   // HERO
   // ==================================================================
@@ -441,94 +467,84 @@ Widget _buildWorld(
   // ADVENTURE MAP
   // ==================================================================
 
- 
-Widget _buildAdventureMap(
-  BuildContext context,
-  List<CurriculumTopic> topics,
-) {
-  return Container(
-    width: double.infinity,
-    decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(34),
-      gradient: LinearGradient(
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-        colors: [
-          Colors.white.withOpacity(0.76),
-          const Color(0xFFEAF7FF).withOpacity(0.76),
-          const Color(0xFFEDE9FE).withOpacity(0.82),
-        ],
-      ),
-      border: Border.all(
-        color: Colors.white.withOpacity(0.92),
-        width: 1.4,
-      ),
-      boxShadow: [
-        BoxShadow(
-          color: const Color(0xFF7C3AED).withOpacity(0.12),
-          blurRadius: 28,
-          offset: const Offset(0, 13),
+  Widget _buildAdventureMap(
+    BuildContext context,
+    List<CurriculumTopic> topics,
+  ) {
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(34),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Colors.white.withOpacity(0.76),
+            const Color(0xFFEAF7FF).withOpacity(0.76),
+            const Color(0xFFEDE9FE).withOpacity(0.82),
+          ],
         ),
-      ],
-    ),
-    child: ClipRRect(
-      borderRadius: BorderRadius.circular(34),
-      child: Stack(
-        children: [
-          // Adventure map background decoration.
-          Positioned.fill(
-            child: CustomPaint(
-              painter: _WorldDecorationPainter(),
-            ),
-          ),
-
-          // All missions are temporarily unlocked.
-          Padding(
-            padding: const EdgeInsets.fromLTRB(
-              15,
-              25,
-              15,
-              30,
-            ),
-            child: Column(
-              children: [
-                for (int i = 0; i < topics.length; i++) ...[
-                  _GameMission(
-                    number: i + 1,
-                    topicName: topics[i].name,
-                    // Only the first mission is unlocked for now.
-                    unlocked: i == 0,
-                    alignment: i.isEven
-                        ? Alignment.centerLeft
-                        : Alignment.centerRight,
-                    // Later missions unlock after progression is implemented.
-                    onTap: i == 0
-                        ? () {
-                            _showGameChoice(
-                              context,
-                              topics[i].name,
-                            );
-                          }
-                        : null,
-                  ),
-
-                  // Connect each mission to the next one.
-                  if (i < topics.length - 1)
-                    _buildConnection(i.isEven),
-                ],
-
-                const SizedBox(height: 18),
-
-                // Adventure completion gate.
-                _buildEndGate(),
-              ],
-            ),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.92),
+          width: 1.4,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFF7C3AED).withOpacity(0.12),
+            blurRadius: 28,
+            offset: const Offset(0, 13),
           ),
         ],
       ),
-    ),
-  );
-}
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(34),
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: CustomPaint(
+                painter: _WorldDecorationPainter(),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                15,
+                25,
+                15,
+                30,
+              ),
+              child: Column(
+                children: [
+                  for (int i = 0; i < topics.length; i++) ...[
+                    _GameMission(
+                      number: i + 1,
+                      topicName: topics[i].name,
+                      unlocked: _isUnlocked(topics, i),
+                      completed: _completed.contains(topics[i].name),
+                      alignment: i.isEven
+                          ? Alignment.centerLeft
+                          : Alignment.centerRight,
+                      onTap: _isUnlocked(topics, i)
+                          ? () {
+                              _showGameChoice(
+                                context,
+                                topics[i].name,
+                              );
+                            }
+                          : null,
+                    ),
+                    if (i < topics.length - 1)
+                      _buildConnection(i.isEven),
+                  ],
+                  const SizedBox(height: 18),
+                  _buildEndGate(),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
   // ==================================================================
   // CONNECTION PATH
@@ -565,7 +581,6 @@ Widget _buildAdventureMap(
                     .withOpacity(0.30),
               ),
             ),
-
             Container(
               width: 66,
               height: 66,
@@ -585,9 +600,7 @@ Widget _buildAdventureMap(
             ),
           ],
         ),
-
         const SizedBox(height: 9),
-
         Text(
           'NEXT AREA',
           style: GoogleFonts.pressStart2p(
@@ -649,9 +662,7 @@ Widget _buildAdventureMap(
               size: 22,
             ),
           ),
-
           const SizedBox(width: 12),
-
           Expanded(
             child: Column(
               crossAxisAlignment:
@@ -664,9 +675,7 @@ Widget _buildAdventureMap(
                     color: const Color(0xFF3B0764),
                   ),
                 ),
-
                 const SizedBox(height: 7),
-
                 Text(
                   'Complete your missions to open new areas.',
                   style: GoogleFonts.dmSans(
@@ -702,6 +711,7 @@ Widget _buildAdventureMap(
           classNumber: widget.classNumber,
           subject: widget.subject,
           assetPath: widget.assetPath,
+          onReturn: _loadProgress,
         );
       },
     );
@@ -716,6 +726,7 @@ class _GameMission extends StatelessWidget {
   final int number;
   final String topicName;
   final bool unlocked;
+  final bool completed;
   final Alignment alignment;
   final VoidCallback? onTap;
 
@@ -723,6 +734,7 @@ class _GameMission extends StatelessWidget {
     required this.number,
     required this.topicName,
     required this.unlocked,
+    required this.completed,
     required this.alignment,
     required this.onTap,
   });
@@ -779,9 +791,7 @@ class _GameMission extends StatelessWidget {
                       number: number,
                       unlocked: unlocked,
                     ),
-
                     const SizedBox(width: 12),
-
                     Expanded(
                       child: Column(
                         crossAxisAlignment:
@@ -789,22 +799,18 @@ class _GameMission extends StatelessWidget {
                         children: [
                           Text(
                             'MISSION ${number.toString().padLeft(2, '0')}',
-                            style:
-                                GoogleFonts.pressStart2p(
+                            style: GoogleFonts.pressStart2p(
                               fontSize: 7.5,
                               color: unlocked
                                   ? const Color(0xFF7C3AED)
                                   : const Color(0xFF9B98A7),
                             ),
                           ),
-
                           const SizedBox(height: 7),
-
                           Text(
                             topicName,
                             maxLines: 2,
-                            overflow:
-                                TextOverflow.ellipsis,
+                            overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.dmSans(
                               fontSize: 13.5,
                               height: 1.18,
@@ -814,63 +820,43 @@ class _GameMission extends StatelessWidget {
                                   : const Color(0xFF8B5CF6),
                             ),
                           ),
-
                           const SizedBox(height: 6),
-
                           Row(
                             children: [
                               Container(
                                 padding:
-                                    const EdgeInsets
-                                        .symmetric(
+                                    const EdgeInsets.symmetric(
                                   horizontal: 7,
                                   vertical: 4,
                                 ),
-                                decoration:
-                                    BoxDecoration(
-                                  color: const Color(
-                                    0xFFEDE9FE,
-                                  ),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFEDE9FE),
                                   borderRadius:
-                                      BorderRadius.circular(
-                                    8,
-                                  ),
+                                      BorderRadius.circular(8),
                                 ),
                                 child: Text(
-                                  unlocked
-                                      ? 'READY'
-                                      : 'LOCKED',
-                                  style:
-                                      GoogleFonts.dmSans(
+                                  completed
+                                      ? 'DONE ✓'
+                                      : (unlocked ? 'READY' : 'LOCKED'),
+                                  style: GoogleFonts.dmSans(
                                     fontSize: 7,
-                                    fontWeight:
-                                        FontWeight.w900,
+                                    fontWeight: FontWeight.w900,
                                     letterSpacing: 0.7,
                                     color: unlocked
-                                        ? const Color(
-                                            0xFF7468CC,
-                                          )
-                                        : const Color(
-                                            0xFF8C8997,
-                                          ),
+                                        ? const Color(0xFF7468CC)
+                                        : const Color(0xFF8C8997),
                                   ),
                                 ),
                               ),
-
                               if (unlocked) ...[
                                 const SizedBox(width: 7),
-
                                 Text(
                                   'TAP TO PLAY',
-                                  style:
-                                      GoogleFonts.dmSans(
+                                  style: GoogleFonts.dmSans(
                                     fontSize: 7.5,
-                                    fontWeight:
-                                        FontWeight.w800,
+                                    fontWeight: FontWeight.w800,
                                     letterSpacing: 0.5,
-                                    color: const Color(
-                                      0xFF8880D8,
-                                    ),
+                                    color: const Color(0xFF8880D8),
                                   ),
                                 ),
                               ],
@@ -882,8 +868,6 @@ class _GameMission extends StatelessWidget {
                   ],
                 ),
               ),
-
-              // Play indicator on unlocked mission
               if (unlocked)
                 Positioned(
                   right: -7,
@@ -892,8 +876,7 @@ class _GameMission extends StatelessWidget {
                     width: 27,
                     height: 27,
                     decoration: BoxDecoration(
-                      gradient:
-                          const LinearGradient(
+                      gradient: const LinearGradient(
                         colors: [
                           Color(0xFF8075E3),
                           Color(0xFFA78BFA),
@@ -955,7 +938,6 @@ class _MissionOrb extends StatelessWidget {
                   .withOpacity(0.25),
             ),
           ),
-
         Container(
           width: 60,
           height: 60,
@@ -993,8 +975,7 @@ class _MissionOrb extends StatelessWidget {
             child: unlocked
                 ? Text(
                     '$number',
-                    style:
-                        GoogleFonts.pressStart2p(
+                    style: GoogleFonts.pressStart2p(
                       fontSize: 17,
                       color: const Color(0xFF6D28D9),
                     ),
@@ -1020,12 +1001,14 @@ class _GameModeSheet extends StatelessWidget {
   final int classNumber;
   final String subject;
   final String assetPath;
+  final VoidCallback onReturn;
 
   const _GameModeSheet({
     required this.topicName,
     required this.classNumber,
     required this.subject,
     required this.assetPath,
+    required this.onReturn,
   });
 
   @override
@@ -1047,8 +1030,7 @@ class _GameModeSheet extends StatelessWidget {
             Color(0xFFF5F1FF),
           ],
         ),
-        borderRadius:
-            const BorderRadius.vertical(
+        borderRadius: const BorderRadius.vertical(
           top: Radius.circular(34),
         ),
         border: Border.all(
@@ -1060,33 +1042,25 @@ class _GameModeSheet extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            // Handle
             Container(
               width: 45,
               height: 4,
               decoration: BoxDecoration(
                 color: const Color(0xFFB9B5D3),
-                borderRadius:
-                    BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(10),
               ),
             ),
-
             const SizedBox(height: 20),
-
-            // NEX + TITLE
             Row(
-              mainAxisAlignment:
-                  MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   width: 42,
                   height: 42,
                   padding: const EdgeInsets.all(7),
                   decoration: BoxDecoration(
-                    color:
-                        Colors.white.withOpacity(0.82),
-                    borderRadius:
-                        BorderRadius.circular(13),
+                    color: Colors.white.withOpacity(0.82),
+                    borderRadius: BorderRadius.circular(13),
                     border: Border.all(
                       color: Colors.white,
                     ),
@@ -1094,8 +1068,7 @@ class _GameModeSheet extends StatelessWidget {
                   child: Image.asset(
                     _nexImage,
                     fit: BoxFit.contain,
-                    errorBuilder:
-                        (context, error, stackTrace) {
+                    errorBuilder: (context, error, stackTrace) {
                       return const Icon(
                         Icons.smart_toy_rounded,
                         color: Color(0xFF7C3AED),
@@ -1103,22 +1076,17 @@ class _GameModeSheet extends StatelessWidget {
                     },
                   ),
                 ),
-
                 const SizedBox(width: 10),
-
                 Text(
                   'NEX MODE SELECT',
-                  style:
-                      GoogleFonts.pressStart2p(
+                  style: GoogleFonts.pressStart2p(
                     fontSize: 10,
                     color: const Color(0xFF3B0764),
                   ),
                 ),
               ],
             ),
-
             const SizedBox(height: 16),
-
             Text(
               'CHOOSE YOUR MODE',
               textAlign: TextAlign.center,
@@ -1128,9 +1096,7 @@ class _GameModeSheet extends StatelessWidget {
                 color: const Color(0xFF3B0764),
               ),
             ),
-
             const SizedBox(height: 8),
-
             Text(
               topicName,
               textAlign: TextAlign.center,
@@ -1142,73 +1108,62 @@ class _GameModeSheet extends StatelessWidget {
                 color: const Color(0xFF6B21A8),
               ),
             ),
-
             const SizedBox(height: 21),
-
-            // GAME MODE CARDS
             Row(
-              crossAxisAlignment:
-                  CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                   child: _ModeCard(
                     title: 'MYSTERY',
-                    subtitle:
-                        'Search for clues and solve the challenge.',
-                    icon:
-                        Icons.manage_search_rounded,
-                    background:
-                        const Color(0xFFEDE9FE),
-                    iconColor:
-                        const Color(0xFF7C3AED),
-                    onTap: () {
-                      Navigator.pop(context);
+                    subtitle: 'Search for clues and solve the challenge.',
+                    icon: Icons.manage_search_rounded,
+                    background: const Color(0xFFEDE9FE),
+                    iconColor: const Color(0xFF7C3AED),
+                    onTap: () async {
+                      // Grab the navigator first: this sheet's context
+                      // is gone once it has been popped.
+                      final navigator = Navigator.of(context);
+                      navigator.pop();
 
-                      Navigator.push(
-                        context,
+                      await navigator.push(
                         MaterialPageRoute(
-                          builder: (_) =>
-                              MysteryGameScreen(
+                          builder: (_) => MysteryGameScreen(
                             topicName: topicName,
-                            classNumber:
-                                classNumber,
+                            classNumber: classNumber,
                             subject: subject,
                             curriculumPath: assetPath,
                             mode: 'mystery',
                           ),
                         ),
                       );
+
+                      onReturn();
                     },
                   ),
                 ),
-
                 const SizedBox(width: 12),
-
                 Expanded(
                   child: _ModeCard(
                     title: 'ACTION',
-                    subtitle:
-                        'Move through the world and complete the challenge.',
+                    subtitle: 'Move through the world and complete the challenge.',
                     icon: Icons.bolt_rounded,
-                    background:
-                        const Color(0xFFEAF7FF),
-                    iconColor:
-                        const Color(0xFF2563EB),
-                    onTap: () {
-                      Navigator.pop(context);
+                    background: const Color(0xFFEAF7FF),
+                    iconColor: const Color(0xFF2563EB),
+                    onTap: () async {
+                      final navigator = Navigator.of(context);
+                      navigator.pop();
 
-                      Navigator.push(
-                        context,
+                      await navigator.push(
                         MaterialPageRoute(
-                          builder: (_) =>
-                              ActionGameScreen(
+                          builder: (_) => ActionGameScreen(
                             topicName: topicName,
-                            classNumber:
-                                classNumber,
+                            classNumber: classNumber,
                             subject: subject,
                           ),
                         ),
                       );
+
+                      onReturn();
                     },
                   ),
                 ),
@@ -1257,35 +1212,30 @@ class _ModeCard extends StatelessWidget {
               background.withOpacity(0.48),
             ],
           ),
-          borderRadius:
-              BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(24),
           border: Border.all(
             color: Colors.white.withOpacity(0.95),
             width: 1.3,
           ),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF7C3AED)
-                  .withOpacity(0.10),
+              color: const Color(0xFF7C3AED).withOpacity(0.10),
               blurRadius: 18,
               offset: const Offset(0, 8),
             ),
           ],
         ),
         child: Column(
-          crossAxisAlignment:
-              CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               width: 54,
               height: 54,
               decoration: BoxDecoration(
                 color: background,
-                borderRadius:
-                    BorderRadius.circular(17),
+                borderRadius: BorderRadius.circular(17),
                 border: Border.all(
-                  color:
-                      Colors.white.withOpacity(0.9),
+                  color: Colors.white.withOpacity(0.9),
                 ),
               ),
               child: Icon(
@@ -1294,9 +1244,7 @@ class _ModeCard extends StatelessWidget {
                 size: 29,
               ),
             ),
-
             const SizedBox(height: 14),
-
             Text(
               title,
               style: GoogleFonts.pressStart2p(
@@ -1304,9 +1252,7 @@ class _ModeCard extends StatelessWidget {
                 color: const Color(0xFF3B0764),
               ),
             ),
-
             const SizedBox(height: 9),
-
             Text(
               subtitle,
               maxLines: 4,
@@ -1318,9 +1264,7 @@ class _ModeCard extends StatelessWidget {
                 color: const Color(0xFF6B21A8),
               ),
             ),
-
             const SizedBox(height: 13),
-
             Row(
               children: [
                 Text(
@@ -1332,9 +1276,7 @@ class _ModeCard extends StatelessWidget {
                     color: iconColor,
                   ),
                 ),
-
                 const SizedBox(width: 4),
-
                 Icon(
                   Icons.arrow_forward_rounded,
                   size: 14,
@@ -1353,8 +1295,7 @@ class _ModeCard extends StatelessWidget {
 // ADVENTURE PATH PAINTER
 // ======================================================================
 
-class _AdventurePathPainter
-    extends CustomPainter {
+class _AdventurePathPainter extends CustomPainter {
   final bool leftToRight;
 
   const _AdventurePathPainter({
@@ -1362,20 +1303,15 @@ class _AdventurePathPainter
   });
 
   @override
-  void paint(
-    Canvas canvas,
-    Size size,
-  ) {
+  void paint(Canvas canvas, Size size) {
     final glowPaint = Paint()
-      ..color = const Color(0xFFBEB7F1)
-          .withOpacity(0.25)
+      ..color = const Color(0xFFBEB7F1).withOpacity(0.25)
       ..strokeWidth = 10
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
 
     final paint = Paint()
-      ..color = const Color(0xFF8B5CF6)
-          .withOpacity(0.78)
+      ..color = const Color(0xFF8B5CF6).withOpacity(0.78)
       ..strokeWidth = 2.6
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
@@ -1383,11 +1319,7 @@ class _AdventurePathPainter
     final path = Path();
 
     if (leftToRight) {
-      path.moveTo(
-        size.width * 0.24,
-        0,
-      );
-
+      path.moveTo(size.width * 0.24, 0);
       path.cubicTo(
         size.width * 0.24,
         size.height * 0.35,
@@ -1397,11 +1329,7 @@ class _AdventurePathPainter
         size.height,
       );
     } else {
-      path.moveTo(
-        size.width * 0.76,
-        0,
-      );
-
+      path.moveTo(size.width * 0.76, 0);
       path.cubicTo(
         size.width * 0.76,
         size.height * 0.35,
@@ -1412,43 +1340,21 @@ class _AdventurePathPainter
       );
     }
 
-    // Glow
-    canvas.drawPath(
-      path,
-      glowPaint,
-    );
+    canvas.drawPath(path, glowPaint);
 
-    // Dashed line
-    for (final metric
-        in path.computeMetrics()) {
+    for (final metric in path.computeMetrics()) {
       double distance = 0;
-
       while (distance < metric.length) {
-        final end = math.min(
-          distance + 8,
-          metric.length,
-        );
-
-        canvas.drawPath(
-          metric.extractPath(
-            distance,
-            end,
-          ),
-          paint,
-        );
-
+        final end = math.min(distance + 8, metric.length);
+        canvas.drawPath(metric.extractPath(distance, end), paint);
         distance += 16;
       }
     }
   }
 
   @override
-  bool shouldRepaint(
-    covariant _AdventurePathPainter
-        oldDelegate,
-  ) {
-    return oldDelegate.leftToRight !=
-        leftToRight;
+  bool shouldRepaint(covariant _AdventurePathPainter oldDelegate) {
+    return oldDelegate.leftToRight != leftToRight;
   }
 }
 
@@ -1456,212 +1362,48 @@ class _AdventurePathPainter
 // WORLD DECORATION
 // ======================================================================
 
-class _WorldDecorationPainter
-    extends CustomPainter {
+class _WorldDecorationPainter extends CustomPainter {
   @override
-  void paint(
-    Canvas canvas,
-    Size size,
-  ) {
+  void paint(Canvas canvas, Size size) {
     final gridPaint = Paint()
-      ..color = const Color(0xFF7C3AED)
-          .withOpacity(0.045)
+      ..color = const Color(0xFF7C3AED).withOpacity(0.045)
       ..strokeWidth = 1;
 
     const gridSize = 30.0;
-
-    for (double x = 0;
-        x < size.width;
-        x += gridSize) {
-      canvas.drawLine(
-        Offset(x, 0),
-        Offset(x, size.height),
-        gridPaint,
-      );
+    for (double x = 0; x < size.width; x += gridSize) {
+      canvas.drawLine(Offset(x, 0), Offset(x, size.height), gridPaint);
     }
-
-    for (double y = 0;
-        y < size.height;
-        y += gridSize) {
-      canvas.drawLine(
-        Offset(0, y),
-        Offset(size.width, y),
-        gridPaint,
-      );
-    }
-
-    final dotPaint = Paint()
-      ..color = const Color(0xFF8B5CF6)
-          .withOpacity(0.14);
-
-    final glowPaint = Paint()
-      ..color = const Color(0xFFC4B5FD)
-          .withOpacity(0.10);
-
-    final positions = [
-      Offset(
-        size.width * 0.12,
-        size.height * 0.18,
-      ),
-      Offset(
-        size.width * 0.84,
-        size.height * 0.12,
-      ),
-      Offset(
-        size.width * 0.11,
-        size.height * 0.72,
-      ),
-      Offset(
-        size.width * 0.89,
-        size.height * 0.70,
-      ),
-    ];
-
-    for (final position in positions) {
-      canvas.drawCircle(
-        position,
-        44,
-        glowPaint,
-      );
-
-      canvas.drawCircle(
-        position,
-        3,
-        dotPaint,
-      );
-    }
-
-    final smallDots = [
-      Offset(
-        size.width * 0.25,
-        size.height * 0.10,
-      ),
-      Offset(
-        size.width * 0.73,
-        size.height * 0.28,
-      ),
-      Offset(
-        size.width * 0.17,
-        size.height * 0.48,
-      ),
-      Offset(
-        size.width * 0.81,
-        size.height * 0.53,
-      ),
-      Offset(
-        size.width * 0.35,
-        size.height * 0.87,
-      ),
-      Offset(
-        size.width * 0.70,
-        size.height * 0.88,
-      ),
-    ];
-
-    for (final dot in smallDots) {
-      canvas.drawCircle(
-        dot,
-        2,
-        dotPaint,
-      );
+    for (double y = 0; y < size.height; y += gridSize) {
+      canvas.drawLine(Offset(0, y), Offset(size.width, y), gridPaint);
     }
   }
 
   @override
-  bool shouldRepaint(
-    covariant _WorldDecorationPainter
-        oldDelegate,
-  ) {
-    return false;
-  }
+  bool shouldRepaint(covariant _WorldDecorationPainter oldDelegate) => false;
 }
 
 // ======================================================================
 // CIRCUIT BACKGROUND
 // ======================================================================
 
-class _CircuitBackgroundPainter
-    extends CustomPainter {
+class _CircuitBackgroundPainter extends CustomPainter {
   @override
-  void paint(
-    Canvas canvas,
-    Size size,
-  ) {
+  void paint(Canvas canvas, Size size) {
     final linePaint = Paint()
-      ..color = const Color(0xFF7C3AED)
-          .withOpacity(0.035)
+      ..color = const Color(0xFF7C3AED).withOpacity(0.035)
       ..strokeWidth = 1;
-
-    final nodePaint = Paint()
-      ..color = const Color(0xFF7C3AED)
-          .withOpacity(0.08)
-      ..style = PaintingStyle.fill;
-
     const gap = 42.0;
 
-    for (double x = 0;
-        x <= size.width;
-        x += gap) {
-      canvas.drawLine(
-        Offset(x, 0),
-        Offset(x, size.height),
-        linePaint,
-      );
+    for (double x = 0; x <= size.width; x += gap) {
+      canvas.drawLine(Offset(x, 0), Offset(x, size.height), linePaint);
     }
-
-    for (double y = 0;
-        y <= size.height;
-        y += gap) {
-      canvas.drawLine(
-        Offset(0, y),
-        Offset(size.width, y),
-        linePaint,
-      );
-    }
-
-    final nodes = [
-      Offset(
-        size.width * 0.08,
-        size.height * 0.16,
-      ),
-      Offset(
-        size.width * 0.90,
-        size.height * 0.23,
-      ),
-      Offset(
-        size.width * 0.12,
-        size.height * 0.76,
-      ),
-      Offset(
-        size.width * 0.88,
-        size.height * 0.80,
-      ),
-    ];
-
-    for (final node in nodes) {
-      canvas.drawCircle(
-        node,
-        3,
-        nodePaint,
-      );
-
-      canvas.drawCircle(
-        node,
-        8,
-        Paint()
-          ..color = const Color(0xFF8B5CF6)
-              .withOpacity(0.025),
-      );
+    for (double y = 0; y <= size.height; y += gap) {
+      canvas.drawLine(Offset(0, y), Offset(size.width, y), linePaint);
     }
   }
 
   @override
-  bool shouldRepaint(
-    covariant _CircuitBackgroundPainter
-        oldDelegate,
-  ) {
-    return false;
-  }
+  bool shouldRepaint(covariant _CircuitBackgroundPainter oldDelegate) => false;
 }
 
 // ======================================================================
@@ -1669,17 +1411,14 @@ class _CircuitBackgroundPainter
 // ======================================================================
 
 class AdventureWorldGame extends FlameGame {
-  final math.Random _random =
-      math.Random();
+  final math.Random _random = math.Random();
 
   @override
-  Color backgroundColor() =>
-      const Color(0x00000000);
+  Color backgroundColor() => const Color(0x00000000);
 
   @override
   Future<void> onLoad() async {
     await super.onLoad();
-
     for (int i = 0; i < 24; i++) {
       add(
         _FloatingOrb(
@@ -1687,12 +1426,8 @@ class AdventureWorldGame extends FlameGame {
             _random.nextDouble() * 900,
             _random.nextDouble() * 1600,
           ),
-          radius:
-              1.5 +
-              _random.nextDouble() * 3,
-          speed:
-              0.3 +
-              _random.nextDouble() * 0.7,
+          radius: 1.5 + _random.nextDouble() * 3,
+          speed: 0.3 + _random.nextDouble() * 0.7,
         ),
       );
     }
@@ -1703,34 +1438,23 @@ class AdventureWorldGame extends FlameGame {
 // FLOATING ORB
 // ======================================================================
 
-class _FloatingOrb
-    extends PositionComponent {
+class _FloatingOrb extends PositionComponent {
   final double radius;
   final double speed;
-
   double time = 0;
 
   _FloatingOrb({
     required Vector2 position,
     required this.radius,
     required this.speed,
-  }) : super(
-          position: position,
-          anchor: Anchor.center,
-        );
+  }) : super(position: position, anchor: Anchor.center);
 
   @override
   void update(double dt) {
     super.update(dt);
-
     time += dt * speed;
-
-    position.y +=
-        math.sin(time) * 0.10;
-
-    position.x +=
-        math.cos(time * 0.7) * 0.04;
-
+    position.y += math.sin(time) * 0.10;
+    position.x += math.cos(time * 0.7) * 0.04;
     if (position.y > 1700) {
       position.y = -20;
     }
@@ -1739,16 +1463,8 @@ class _FloatingOrb
   @override
   void render(Canvas canvas) {
     super.render(canvas);
-
-    final paint = Paint()
-      ..color = const Color(0xFF8B5CF6)
-          .withOpacity(0.18);
-
-    canvas.drawCircle(
-      Offset.zero,
-      radius,
-      paint,
-    );
+    final paint = Paint()..color = const Color(0xFF8B5CF6).withOpacity(0.18);
+    canvas.drawCircle(Offset.zero, radius, paint);
   }
 }
 
@@ -1756,8 +1472,7 @@ class _FloatingOrb
 // NEX HERO ROBOT
 // ======================================================================
 
-class _NexHeroRobot
-    extends StatelessWidget {
+class _NexHeroRobot extends StatelessWidget {
   const _NexHeroRobot();
 
   @override
@@ -1773,58 +1488,19 @@ class _NexHeroRobot
             height: 92,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: const Color(0xFFC4B5FD)
-                  .withOpacity(0.40),
-              boxShadow: [
-                BoxShadow(
-                  color: const Color(0xFFA78BFA)
-                      .withOpacity(0.25),
-                  blurRadius: 25,
-                  spreadRadius: 4,
-                ),
-              ],
+              color: const Color(0xFFC4B5FD).withOpacity(0.40),
             ),
           ),
-
-          Positioned(
-            top: 2,
-            right: 3,
-            child: Container(
-              width: 13,
-              height: 13,
-              decoration:
-                  const BoxDecoration(
+          Image.asset(
+            _nexImage,
+            fit: BoxFit.contain,
+            errorBuilder: (context, error, stackTrace) {
+              return const Icon(
+                Icons.smart_toy_rounded,
+                size: 42,
                 color: Color(0xFF7C3AED),
-                shape: BoxShape.circle,
-              ),
-            ),
-          ),
-
-          Padding(
-            padding:
-                const EdgeInsets.all(8),
-            child: Image.asset(
-              _nexImage,
-              fit: BoxFit.contain,
-              errorBuilder:
-                  (context, error, stackTrace) {
-                return Container(
-                  width: 70,
-                  height: 70,
-                  decoration:
-                      BoxDecoration(
-                    color: Colors.white
-                        .withOpacity(0.85),
-                    shape: BoxShape.circle,
-                  ),
-                  child: const Icon(
-                    Icons.smart_toy_rounded,
-                    size: 42,
-                    color: Color(0xFF7C3AED),
-                  ),
-                );
-              },
-            ),
+              );
+            },
           ),
         ],
       ),
@@ -1836,8 +1512,7 @@ class _NexHeroRobot
 // GLOW BLOB
 // ======================================================================
 
-class _GlowBlob
-    extends StatelessWidget {
+class _GlowBlob extends StatelessWidget {
   final double size;
   final Color color;
 
@@ -1862,67 +1537,28 @@ class _GlowBlob
 }
 
 // ======================================================================
-// LOADING
+// LOADING / EMPTY / ERROR COMPONENTS
 // ======================================================================
 
-class _LoadingWorld
-    extends StatelessWidget {
+class _LoadingWorld extends StatelessWidget {
   const _LoadingWorld();
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding:
-          const EdgeInsets.symmetric(
-        horizontal: 28,
-        vertical: 24,
-      ),
+      padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 24),
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [
-            Color(0xFFF5F3FF),
-            Color(0xFFF3E8FF),
-          ],
-        ),
-        borderRadius:
-            BorderRadius.circular(25),
-        border: Border.all(
-          color: Colors.white,
-          width: 1.2,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: const Color(0xFF7C3AED)
-                .withOpacity(0.12),
-            blurRadius: 20,
-          ),
-        ],
+        color: Colors.white.withOpacity(0.85),
+        borderRadius: BorderRadius.circular(25),
       ),
       child: Column(
-        mainAxisSize:
-            MainAxisSize.min,
+        mainAxisSize: MainAxisSize.min,
         children: [
-          const SizedBox(
-            width: 32,
-            height: 32,
-            child:
-                CircularProgressIndicator(
-              strokeWidth: 3,
-              color: Color(0xFF8275D8),
-            ),
-          ),
-
+          const CircularProgressIndicator(color: Color(0xFF8275D8)),
           const SizedBox(height: 15),
-
           Text(
             'LOADING WORLD',
-            style:
-                GoogleFonts.pressStart2p(
-              fontSize: 8,
-              color: const Color(
-                0xFF3B0764,
-              ),
-            ),
+            style: GoogleFonts.pressStart2p(fontSize: 8, color: const Color(0xFF3B0764)),
           ),
         ],
       ),
@@ -1930,210 +1566,46 @@ class _LoadingWorld
   }
 }
 
-// ======================================================================
-// EMPTY WORLD
-// ======================================================================
-
-class _EmptyWorld
-    extends StatelessWidget {
+class _EmptyWorld extends StatelessWidget {
   final String message;
-
-  const _EmptyWorld({
-    required this.message,
-  });
+  const _EmptyWorld({required this.message});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin:
-          const EdgeInsets.all(24),
-      padding:
-          const EdgeInsets.all(25),
+      margin: const EdgeInsets.all(24),
+      padding: const EdgeInsets.all(25),
       decoration: BoxDecoration(
-        color: Colors.white
-            .withOpacity(0.85),
-        borderRadius:
-            BorderRadius.circular(28),
-        border: Border.all(
-          color: Colors.white,
-        ),
+        color: Colors.white.withOpacity(0.85),
+        borderRadius: BorderRadius.circular(28),
       ),
       child: Text(
         message,
-        textAlign:
-            TextAlign.center,
-        style: GoogleFonts.dmSans(
-          fontSize: 14,
-          fontWeight:
-              FontWeight.w700,
-          color: const Color(
-            0xFF3B0764,
-          ),
-        ),
+        textAlign: TextAlign.center,
+        style: GoogleFonts.dmSans(fontSize: 14, fontWeight: FontWeight.w700, color: const Color(0xFF3B0764)),
       ),
     );
   }
 }
 
-// ======================================================================
-// ERROR WORLD
-// ======================================================================
-
-class _ErrorWorld
-    extends StatelessWidget {
+class _ErrorWorld extends StatelessWidget {
   final String message;
   final VoidCallback onRetry;
 
-  const _ErrorWorld({
-    required this.message,
-    required this.onRetry,
-  });
+  const _ErrorWorld({required this.message, required this.onRetry});
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding:
-            const EdgeInsets.all(24),
-        child: Container(
-          padding:
-              const EdgeInsets.all(24),
-          decoration:
-              BoxDecoration(
-            gradient:
-                const LinearGradient(
-              colors: [
-                Color(0xFFF5F3FF),
-                Color(0xFFF3E8FF),
-              ],
-            ),
-            borderRadius:
-                BorderRadius.circular(
-              28,
-            ),
-            border: Border.all(
-              color: Colors.white,
-              width: 1.3,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: const Color(
-                  0xFF7C3AED,
-                ).withOpacity(0.12),
-                blurRadius: 22,
-              ),
-            ],
-          ),
-          child: Column(
-            mainAxisSize:
-                MainAxisSize.min,
-            children: [
-              Container(
-                width: 58,
-                height: 58,
-                decoration:
-                    BoxDecoration(
-                  color: const Color(
-                    0xFFEDE9FE,
-                  ),
-                  borderRadius:
-                      BorderRadius.circular(
-                    18,
-                  ),
-                ),
-                child: const Icon(
-                  Icons.cloud_off_rounded,
-                  size: 30,
-                  color: Color(
-                    0xFF8175D8,
-                  ),
-                ),
-              ),
-
-              const SizedBox(height: 15),
-
-              Text(
-                'WORLD OFFLINE',
-                textAlign:
-                    TextAlign.center,
-                style:
-                    GoogleFonts.pressStart2p(
-                  fontSize: 10,
-                  color: const Color(
-                    0xFF3B0764,
-                  ),
-                ),
-              ),
-
-              const SizedBox(height: 10),
-
-              Text(
-                message,
-                maxLines: 4,
-                overflow:
-                    TextOverflow.ellipsis,
-                textAlign:
-                    TextAlign.center,
-                style:
-                    GoogleFonts.dmSans(
-                  fontSize: 10.5,
-                  height: 1.4,
-                  color: const Color(
-                    0xFF6B21A8,
-                  ),
-                ),
-              ),
-
-              const SizedBox(height: 18),
-
-              GestureDetector(
-                onTap: onRetry,
-                child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(
-                    horizontal: 22,
-                    vertical: 12,
-                  ),
-                  decoration:
-                      BoxDecoration(
-                    gradient:
-                        const LinearGradient(
-                      colors: [
-                        Color(0xFF7C3AED),
-                        Color(0xFF8B5CF6),
-                      ],
-                    ),
-                    borderRadius:
-                        BorderRadius.circular(
-                      14,
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color:
-                            const Color(
-                          0xFF7C3AED,
-                        ).withOpacity(0.22),
-                        blurRadius: 12,
-                        offset:
-                            const Offset(
-                          0,
-                          5,
-                        ),
-                      ),
-                    ],
-                  ),
-                  child: Text(
-                    'TRY AGAIN',
-                    style:
-                        GoogleFonts.pressStart2p(
-                      fontSize: 7,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(message, textAlign: TextAlign.center),
+            const SizedBox(height: 12),
+            ElevatedButton(onPressed: onRetry, child: const Text('TRY AGAIN')),
+          ],
         ),
       ),
     );

@@ -1,4 +1,3 @@
-
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -26,7 +25,6 @@ class AdventureService {
         await _auth.signInAnonymously();
       }
 
-      // Call the Firebase Cloud Function.
       final callable = _functions.httpsCallable('generateGame');
 
       final result = await callable.call<Map<String, dynamic>>({
@@ -35,17 +33,32 @@ class AdventureService {
         'classNumber': classNumber,
         'age': age,
         'learningObjectives': learningObjectives,
+        // Older naming, accepted by the server as a fallback.
+        'strand': subject,
+        'playerAge': age,
       });
 
-      // Convert the response into a Dart map.
       final adventure = Map<String, dynamic>.from(result.data);
 
-      // Validate the required adventure fields.
-      if (adventure['title'] is! String ||
-          adventure['spawn'] is! Map ||
-          adventure['clues'] is! List ||
-          adventure['exit'] is! Map ||
-          adventure['environment'] is! Map) {
+      final rawVersion = adventure['specVersion'];
+      final version = rawVersion is num ? rawVersion.toInt() : null;
+
+      if (version != 2 && version != 3) {
+        throw const FormatException(
+          'The adventure server is sending an old format. '
+          'Update the generateGame function.',
+        );
+      }
+
+      final complete = adventure['title'] is String &&
+          adventure['puzzles'] is List &&
+          (version == 3
+              ? adventure['stages'] is List
+              : (adventure['entities'] is List &&
+                  adventure['spawn'] is Map &&
+                  adventure['environment'] is Map));
+
+      if (!complete) {
         throw const FormatException(
           'The AI returned an incomplete adventure.',
         );
